@@ -1,0 +1,76 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-sans: var(--font-dm), "Avenir Next", "Segoe UI", sans-serif;
+  --font-serif: var(--font-fraunces), Georgia, "Times New Roman", serif;
+  --color-ink: #171a2b;
+  --color-paper: #f8f1e6;
+  --color-card: #fffaf2;
+  --color-navy: #171a2b;
+  --color-navy-deep: #101221;
+  --color-gold: #f4bd32;
+  --color-gold-deep: #c81d28;
+  --color-ribbon: #f22e32;
+  --color-sun: #f4bd32;
+  --color-coral: #f7b2a6;
+  --color-sky: #b7dde8;
+  --color-line: #171a2b38;
+  --color-muted: #4d5162;
+}
+
+html {
+  color-scheme: light;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+}
+
+::selection {
+  background: #f22e32;
+  color: #fffaf2;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid #c81d28;
+  outline-offset: 3px;
+}
+
+.ticker-track {
+  animation: ticker 28s linear infinite;
+}
+
+@keyframes ticker {
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ticker-track {
+    animation: none;
+  }
+}
+
+.sunburst {
+  background: repeating-conic-gradient(
+    from -6deg,
+    #f4bd32 0deg 8deg,
+    transparent 8deg 16deg
+  );
+}
+
+.sunburst::after {
+  content: "";
+  position: absolute;
+  inset: 18%;
+  border-radius: 9999px;
+  background: var(--color-paper);
+}
