@@ -46,11 +46,11 @@ export default function DonatePage() {
             .
           </p>
         </div>
-          <aside className="rounded-3xl bg-navy p-7 text-paper md:col-span-5">
+          <aside className="rounded-3xl border border-[#bfdff3]/70 bg-[#eaf6ff] p-7 text-navy md:col-span-5">
             {hasDonationLink() ? (
               <>
-                <h2 className="font-serif text-3xl">Give now</h2>
-              <p className="mt-3 leading-7 text-paper/80">
+                <h2 className="font-serif text-3xl text-navy">Give now</h2>
+              <p className="mt-3 leading-7 text-navy/80">
                 This button opens the chapter’s approved donation page.
               </p>
               <a
@@ -64,8 +64,8 @@ export default function DonatePage() {
             </>
             ) : (
               <>
-                <h2 className="font-serif text-3xl">Giving link coming</h2>
-                <p className="mt-3 leading-7 text-paper/80">
+                <h2 className="font-serif text-3xl text-navy">Giving link coming</h2>
+                <p className="mt-3 leading-7 text-navy/80">
                   The approved donation link is not on the site yet. When the
                   chapter adds it, the button on this page will open that page.
                 </p>
