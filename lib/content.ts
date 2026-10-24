@@ -320,7 +320,7 @@ export const waysToHelp = [
   {
     href: "/events",
     title: "Join an activity",
-    text: "The chapter’s public days include Serve with Love, tennis, a concert, the July 4th sale, and Father’s Day team building. Come when a date is set.",
+    text: "The chapter’s main activity days include Serve with Love, tennis, concert, the July 4th sale, and Father’s Day team building. Come when a date is set.",
   },
   {
     href: "/join",

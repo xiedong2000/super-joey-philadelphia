@@ -153,10 +153,19 @@ export default function HomePage() {
 
       <section className="border-y border-line bg-card">
         <div className="mx-auto grid w-full max-w-6xl gap-8 px-5 py-20 md:grid-cols-12">
-          <h2 className="font-serif text-[clamp(2.8rem,5vw,4.8rem)] leading-[0.92] tracking-[-0.04em] text-navy md:col-span-5">
-            One Child.
-            <span className="mt-1 block italic text-ribbon">A Legacy of Hope.</span>
-          </h2>
+          <div className="md:col-span-5">
+            <h2 className="font-serif text-[clamp(2.8rem,5vw,4.8rem)] leading-[0.92] tracking-[-0.04em] text-navy">
+              One Child.
+              <span className="mt-1 block italic text-ribbon">A Legacy of Hope.</span>
+            </h2>
+            <figure className="mt-6 aspect-[4/3] overflow-hidden rounded-3xl border border-line bg-white shadow-[0_24px_50px_-36px_rgba(22,48,68,0.7)]">
+              <img
+                src="/photo/SuperJoey-serverforlove.jpg"
+                alt="Volunteers serving families at a community meal"
+                className="h-full w-full object-cover"
+              />
+            </figure>
+          </div>
           <div className="space-y-4 text-lg leading-8 md:col-span-7">
             {joeyStory.map((paragraph) => (
               <p key={paragraph}>{paragraph}</p>
