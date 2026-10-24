@@ -34,13 +34,12 @@ export default function HomePage() {
         <div className="mx-auto grid w-full max-w-6xl items-center gap-4 px-5 pb-4 pt-0 md:grid-cols-2 md:gap-6 md:pb-8 md:pt-0">
           <div>
             <p className="flex items-center text-xs font-bold uppercase tracking-[0.16em] text-navy">
-              <span className="mr-2 inline-block h-2.5 w-2.5 rounded-full bg-ribbon shadow-[0_0_0_6px_#f22e3224]" />
+              <span className="mr-2 inline-block h-2.5 w-2.5 rounded-full bg-ribbon" />
               Philadelphia chapter
             </p>
-            <h1 className="mt-2 font-serif text-[clamp(3.4rem,7vw,6.6rem)] leading-[0.86] tracking-[-0.045em] text-navy">
-              Open hearts.
-              <span className="mt-1 block italic text-ribbon">Philadelphia</span>
-              <span className="block italic text-ribbon">action.</span>
+            <h1 className="mt-2 font-serif text-[clamp(2.8rem,5.4vw,5.2rem)] leading-[0.86] tracking-[-0.045em] text-gold">
+              Kindness is a choice.
+              <span className="mt-1 block text-[0.72em] italic text-ribbon">Philadelphia action.</span>
             </h1>
             <p className="mt-4 max-w-xl text-lg leading-8 text-navy/80">
               Student volunteers in Philadelphia show up for children and
@@ -61,7 +60,6 @@ export default function HomePage() {
           </div>
 
           <div className="relative grid min-h-[300px] place-items-center md:min-h-[360px]">
-            <div className="sunburst absolute aspect-square w-[min(78vw,460px)] rounded-full opacity-90" />
             <figure className="relative z-10 flex w-[min(72vw,430px)] rotate-2 items-center justify-center overflow-hidden rounded-full border border-navy/20 bg-card p-4 shadow-[12px_16px_0_#171a2b14]">
               <img
                 src="/photo/SuperJoeyHomeIconNew.png"
@@ -105,18 +103,30 @@ export default function HomePage() {
             is a place for students, families, and schools.
           </p>
         </div>
-        <ol className="mt-10 grid gap-4 md:grid-cols-3">
+        <ol className="mt-10 grid auto-rows-fr gap-4 md:grid-cols-3">
           {waysToHelp.map((way, index) => (
-            <li key={way.href}>
+            <li key={way.href} className="h-full">
               <Link
                 href={way.href}
-                className={`flex min-h-80 flex-col border border-navy p-6 transition hover:-translate-y-1 hover:shadow-[7px_8px_0_#171a2b] ${cardTones[index]}`}
+                className={`flex h-full min-h-80 flex-col border border-navy p-6 transition hover:-translate-y-1 hover:shadow-[7px_8px_0_#171a2b] ${cardTones[index]}`}
               >
                 <span className="self-end text-xs font-bold tracking-[0.14em]">
                   0{index + 1}
                 </span>
-                <span className="mt-10 flex h-14 w-14 items-center justify-center rounded-full border border-navy text-lg">
-                  {index === 0 ? "→" : index === 1 ? "+" : "♥"}
+                <span className="mt-10 flex h-16 w-16 items-center justify-center rounded-full border border-navy bg-white/40">
+                  {index === 0 ? (
+                    <svg viewBox="0 0 24 24" aria-hidden="true" className="h-8 w-8 stroke-[2.4] text-ribbon">
+                      <path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round"/>
+                    </svg>
+                  ) : index === 1 ? (
+                    <svg viewBox="0 0 24 24" aria-hidden="true" className="h-8 w-8 fill-none stroke-[2.4] text-ribbon">
+                      <path d="M12 5v14M5 12h14" stroke="currentColor" strokeLinecap="round"/>
+                    </svg>
+                  ) : (
+                    <svg viewBox="0 0 24 24" aria-hidden="true" className="h-8 w-8 fill-current text-ribbon">
+                      <path d="M12 20.2c-.3 0-.6-.1-.8-.3l-6.8-6.5C2.7 11.7 2 10.5 2 9.2 2 6.8 3.8 5 6.2 5c1.8 0 3.2 1 4 2.1C10.9 6 12.3 5 14.1 5 16.5 5 18.3 6.8 18.3 9.2c0 1.3-.7 2.5-2.5 4.2l-6.8 6.5c-.2.2-.5.3-.8.3Z"/>
+                    </svg>
+                  )}
                 </span>
                 <span className="mt-8 font-serif text-3xl leading-none text-navy">
                   {way.title}
