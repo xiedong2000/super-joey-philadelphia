@@ -44,7 +44,10 @@ export default function DonatePage() {
             <section className="mt-8">
               <h2 className="font-serif text-3xl text-navy">Donor recognition</h2>
               <ul className="mt-4 list-inside list-disc space-y-2 text-lg leading-8">
-                <li>Business name and logo featured in the concert program</li>
+                <li>
+                  Business name featured in event programs, tournament flyers,
+                  promotional materials, and on our website
+                </li>
                 <li>A donation certificate for display</li>
                 <li>A nonprofit receipt for tax purposes</li>
               </ul>
