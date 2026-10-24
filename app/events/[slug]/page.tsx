@@ -66,9 +66,9 @@ export default async function EventPage({ params }: EventPageProps) {
           </div>
         </section>
       ) : null}
-      <section className="mt-10 rounded-3xl bg-navy p-6 text-paper">
+      <section className="mt-10 rounded-3xl bg-sky p-6 text-navy">
         <h2 className="font-serif text-3xl">Take part</h2>
-        <p className="mt-3 leading-7 text-paper/80">{activity.takePart}</p>
+        <p className="mt-3 leading-7 text-navy/80">{activity.takePart}</p>
         <div className="mt-5 flex flex-col gap-3 sm:flex-row">
           <Link
             href="/join"
@@ -78,7 +78,7 @@ export default async function EventPage({ params }: EventPageProps) {
           </Link>
           <a
             href={site.instagramUrl}
-            className="rounded-full border border-paper/30 px-5 py-3 text-center font-semibold"
+            className="rounded-full border border-navy/30 px-5 py-3 text-center font-semibold"
           >
             Instagram
           </a>

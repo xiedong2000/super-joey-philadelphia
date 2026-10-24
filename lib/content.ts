@@ -1,7 +1,7 @@
 /**
  * Public copy for the Philadelphia chapter site.
- * Change text here when activities, officers, or the donation link change.
- * Add an officer only after that person has agreed to be named on the site.
+ * Change text here when activities, leaders, or the donation link change.
+ * Add a leader only after that person has agreed to be named on the site.
  */
 
 export const site = {
@@ -126,7 +126,14 @@ export type UpcomingEvent = {
 };
 
 /** Confirmed future dates only. Leave this empty when nothing is scheduled yet. */
-export const upcoming: UpcomingEvent[] = [];
+export const upcoming: UpcomingEvent[] = [
+  {
+    title: "Thanksgiving Serve with Love",
+    when: "November 25, 2026",
+    where: "Ronald McDonald House Philadelphia",
+    detail: "Join us for Thanksgiving Serve with Love.",
+  },
+];
 
 export type PastEdition = {
   year: string;

@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 export default function LeadershipPage() {
   return (
     <>
-      <PageIntro kicker="Leadership" title="The officers guiding Philadelphia.">
+      <PageIntro kicker="Leadership" title="Meet the leadership team.">
         <></>
       </PageIntro>
 

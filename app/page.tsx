@@ -61,7 +61,7 @@ export default function HomePage() {
             <div className="mt-6 flex flex-wrap items-center gap-6">
               <Link
                 href="/join"
-                className="inline-flex min-h-12 items-center border border-navy bg-navy px-5 font-bold text-white shadow-[4px_4px_0_#f22e32] transition hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-[2px_2px_0_#f22e32]"
+                className="inline-flex min-h-12 items-center border border-navy bg-sky px-5 font-bold text-navy shadow-[4px_4px_0_#f22e32] transition hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-[2px_2px_0_#f22e32]"
               >
                 Join the chapter
               </Link>
@@ -236,7 +236,7 @@ export default function HomePage() {
       </section>
 
       <section className="mx-auto w-full max-w-6xl px-5 py-20">
-        <h2 className="font-serif text-5xl tracking-[-0.04em] text-navy">Co-presidents</h2>
+        <h2 className="font-serif text-5xl tracking-[-0.04em] text-navy">Leadership</h2>
         <ul className="mt-8 grid gap-4 md:grid-cols-2">
           {leaders.map((leader) => (
             <li key={leader.name} className="flex items-center gap-4 border border-navy bg-card p-6">
@@ -260,7 +260,7 @@ export default function HomePage() {
           ))}
         </ul>
         <Link href="/leadership" className="mt-6 inline-block font-bold underline decoration-ribbon underline-offset-4">
-          Meet the officers
+          Meet the leadership team
         </Link>
       </section>
 
