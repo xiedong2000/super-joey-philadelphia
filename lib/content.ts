@@ -43,17 +43,17 @@ export type Activity = {
 export const activities: Activity[] = [
   {
     slug: "serve-for-love",
-    title: "Serve for Love",
+    title: "Serve with Love",
     cadence: "Yearly",
     invitation: "Give a day of service",
     summary:
       "A service activity where Philadelphia volunteers show up in person for families affected by childhood cancer.",
     story: [
-      "Serve for Love is one of the chapter’s yearly activities. Students give time: a planned service project, organized by the Philadelphia team.",
-      "The date, meeting place, and what to bring are announced before each Serve for Love. This page stays free of a date until the chapter confirms one.",
+      "Serve with Love is one of the chapter’s yearly activities. Students give time: a planned service project, organized by the Philadelphia team.",
+      "The date, meeting place, and what to bring are announced before each Serve with Love. This page stays free of a date until the chapter confirms one.",
     ],
     takePart:
-      "Students who want a service shift can say so on the Join page. The chapter uses that list when the next Serve for Love is scheduled.",
+      "Students who want a service shift can say so on the Join page. The chapter uses that list when the next Serve with Love is scheduled.",
     photo: "/photo/ServeWithLove.png",
   },
   {
@@ -232,7 +232,7 @@ export const waysToHelp = [
   {
     href: "/events",
     title: "Join an activity",
-    text: "The chapter’s public days include Serve for Love, tennis, a concert, the July 4th sale, and Father’s Day team building. Come when a date is set.",
+    text: "The chapter’s public days include Serve with Love, tennis, a concert, the July 4th sale, and Father’s Day team building. Come when a date is set.",
   },
   {
     href: "/join",
@@ -265,7 +265,7 @@ export const survivalNote =
   "For children and adolescents diagnosed in 2013–2019, five-year survival was about 83% to 88%, depending on age. That progress is real, and treatment can still stretch on for a long time, disrupting school, work, and everyday family life.";
 
 export const joinInterests = [
-  "Serve for Love",
+  "Serve with Love",
   "Charity Tennis Tournament",
   "Charity Concert",
   "July 4th Charity Sale",

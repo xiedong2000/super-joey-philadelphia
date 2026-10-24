@@ -18,7 +18,7 @@ const ticker = [
   "No child should fight alone",
   "Philadelphia cares",
   "Hope lives here",
-  "Serve for Love",
+  "Serve with Love",
   "Charity tennis",
   "Charity concert",
   "July 4th sale",
@@ -221,9 +221,17 @@ export default function HomePage() {
         <ul className="mt-8 grid gap-4 md:grid-cols-2">
           {leaders.map((leader) => (
             <li key={leader.name} className="flex items-center gap-4 border border-navy bg-card p-6">
-              <span className="flex h-16 w-16 items-center justify-center bg-sun font-serif text-xl text-navy">
-                {leader.initials}
-              </span>
+              {leader.photo ? (
+                <img
+                  src={leader.photo}
+                  alt={leader.photoAlt ?? `${leader.name} portrait`}
+                  className="h-28 w-28 rounded-2xl border border-navy/10 bg-white object-contain p-1 sm:h-32 sm:w-32"
+                />
+              ) : (
+                <span className="flex h-20 w-20 items-center justify-center bg-sun font-serif text-xl text-navy">
+                  {leader.initials}
+                </span>
+              )}
               <div>
                 <h3 className="font-serif text-3xl text-navy">{leader.name}</h3>
                 <p className="font-bold text-gold-deep">{leader.role}</p>

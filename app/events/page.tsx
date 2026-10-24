@@ -7,7 +7,7 @@ import { VideoGrid } from "@/components/VideoCard";
 export const metadata: Metadata = {
   title: "Activities",
   description:
-    "Yearly Super Joey Foundation Philadelphia activities, including Serve for Love, tennis, a concert, the July 4th Charity Sale, and Father’s Day Team Building.",
+    "Yearly Super Joey Foundation Philadelphia activities, including Serve with Love, tennis, a concert, the July 4th Charity Sale, and Father’s Day Team Building.",
 };
 
 export default function EventsPage() {
@@ -15,7 +15,7 @@ export default function EventsPage() {
     <>
       <PageIntro kicker="Activities" title="Five ways the Philadelphia chapter shows up.">
         <p>
-          The yearly calendar is Serve for Love, the Charity Tennis Tournament,
+          The yearly calendar is Serve with Love, the Charity Tennis Tournament,
           the Charity Concert, the July 4th Charity Sale, and Father’s Day Team
           Building. Confirmed dates appear first. Past videos from the chapter
           are below.

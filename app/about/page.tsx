@@ -49,7 +49,7 @@ export default function AboutPage() {
           <aside className="rounded-3xl bg-navy p-6 text-paper md:col-span-5">
             <h2 className="font-serif text-3xl">In Philadelphia</h2>
             <ul className="mt-4 space-y-3 text-paper/85">
-              <li>Serve for Love</li>
+              <li>Serve with Love</li>
               <li>Charity Tennis Tournament</li>
               <li>Charity Concert</li>
               <li>July 4th Charity Sale</li>

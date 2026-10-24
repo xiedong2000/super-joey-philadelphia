@@ -24,7 +24,7 @@ export default function JoinPage() {
         <div className="md:col-span-5">
           <h2 className="font-serif text-3xl text-navy">Ways to help</h2>
           <ul className="mt-4 space-y-3 text-lg leading-8">
-            <li>Serve at the next Serve for Love</li>
+            <li>Serve at the next Serve with Love</li>
             <li>Play, staff, or sponsor the tennis tournament</li>
             <li>Perform or help produce the charity concert</li>
             <li>Help with the July 4th Charity Sale</li>
