@@ -25,10 +25,18 @@ export default function LeadershipPage() {
           {leaders.map((leader) => (
             <li key={leader.name} className="rounded-3xl border border-line bg-card p-7">
               <div className="flex items-center gap-4">
-                <span className="flex h-16 w-16 items-center justify-center rounded-full bg-navy font-serif text-xl text-ribbon">
-                  <span className="sr-only">{leader.name}. </span>
-                  {leader.initials}
-                </span>
+                {leader.photo ? (
+                  <img
+                    src={leader.photo}
+                    alt={leader.photoAlt ?? `${leader.name} portrait`}
+                    className="h-16 w-16 rounded-full object-cover ring-2 ring-navy/10"
+                  />
+                ) : (
+                  <span className="flex h-16 w-16 items-center justify-center rounded-full bg-navy font-serif text-xl text-ribbon">
+                    <span className="sr-only">{leader.name}. </span>
+                    {leader.initials}
+                  </span>
+                )}
                 <div>
                   <h2 className="font-serif text-3xl text-navy">{leader.name}</h2>
                   <p className="font-semibold text-gold-deep">{leader.role}</p>

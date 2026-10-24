@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-labelledby="title desc">
+  <title id="title">Patrick Xie portrait placeholder</title>
+  <desc id="desc">Stylized portrait placeholder with initials PX.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#dbeaf7"/>
+      <stop offset="100%" stop-color="#9dc3d4"/>
+    </linearGradient>
+  </defs>
+  <rect width="200" height="200" rx="28" fill="url(#bg)"/>
+  <circle cx="100" cy="74" r="34" fill="#17365d" opacity="0.9"/>
+  <path d="M54 162c8-30 31-45 46-45s38 15 46 45" fill="#17365d" opacity="0.9"/>
+  <text x="100" y="184" text-anchor="middle" font-family="Georgia, serif" font-size="28" font-weight="700" fill="#f2f7fb">PX</text>
+</svg>

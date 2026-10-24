@@ -191,6 +191,8 @@ export type Leader = {
   school: string;
   initials: string;
   bio: string;
+  photo?: string;
+  photoAlt?: string;
 };
 
 export const leaders: Leader[] = [
@@ -200,6 +202,8 @@ export const leaders: Leader[] = [
     school: "Lower Moreland High School",
     initials: "PX",
     bio: "Patrick Xie is co-president of Super Joey Foundation Philadelphia.",
+    photo: "/leadership/patrick-xie.svg",
+    photoAlt: "Patrick Xie portrait",
   },
   {
     name: "Richard Wan",
@@ -207,6 +211,8 @@ export const leaders: Leader[] = [
     school: "Central Bucks High School",
     initials: "RW",
     bio: "Richard Wan is co-president of the Philadelphia chapter.",
+    photo: "/leadership/richard-wan.svg",
+    photoAlt: "Richard Wan portrait",
   },
 ];
 
