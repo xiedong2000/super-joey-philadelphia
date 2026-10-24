@@ -3,11 +3,11 @@ import { site } from "@/lib/content";
 
 export function SiteFooter() {
   return (
-    <footer className="mt-auto border-t border-line bg-navy text-paper">
+    <footer className="mt-auto border-t border-[#bfdff3]/70 bg-[#eaf6ff] text-navy">
       <div className="mx-auto grid w-full max-w-6xl gap-10 px-5 py-12 md:grid-cols-3">
         <div>
-          <p className="font-serif text-2xl">Super Joey Foundation Philadelphia</p>
-          <p className="mt-3 max-w-sm text-sm leading-6 text-paper/80">
+          <p className="font-serif text-2xl text-navy">Super Joey Foundation Philadelphia</p>
+          <p className="mt-3 max-w-sm text-sm leading-6 text-navy/80">
             A Philadelphia chapter team of the{" "}
             <a
               className="underline decoration-ribbon underline-offset-4"
@@ -22,7 +22,7 @@ export function SiteFooter() {
           <p className="text-xs font-semibold uppercase tracking-[0.18em] text-ribbon">
             Visit
           </p>
-          <ul className="mt-3 space-y-2 text-sm">
+          <ul className="mt-3 space-y-2 text-sm text-navy/80">
             <li>
               <Link href="/events" className="hover:text-ribbon">
                 Activities
@@ -54,7 +54,7 @@ export function SiteFooter() {
           <p className="text-xs font-semibold uppercase tracking-[0.18em] text-ribbon">
             Chapter channels
           </p>
-          <ul className="mt-3 space-y-2 text-sm">
+          <ul className="mt-3 space-y-2 text-sm text-navy/80">
             <li>
               <a className="hover:text-ribbon" href={site.instagramUrl}>
                 Instagram {site.instagramHandle}
