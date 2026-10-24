@@ -257,7 +257,7 @@ export default function HomePage() {
       </section>
 
       <section className="border-t border-[#bfdff3]/70 bg-[#eaf6ff] text-navy">
-        <div className="relative mx-auto grid w-full max-w-6xl gap-10 overflow-hidden px-5 py-16">
+        <div className="relative mx-auto grid w-full max-w-6xl gap-10 overflow-hidden px-5 py-16 md:grid-cols-2 md:items-center">
           <div
             className="pointer-events-none absolute -right-24 -top-24 hidden h-80 w-80 rounded-full border-[48px] border-ribbon md:block"
             aria-hidden="true"
@@ -266,13 +266,16 @@ export default function HomePage() {
             <p className="text-xs font-bold uppercase tracking-[0.16em] text-ribbon">
               Foundation
             </p>
-            <p className="mt-3 font-serif text-4xl text-navy">
+            <p className="mt-3 font-serif text-2xl text-navy">
               <a href={site.phoneHref}>{site.phoneDisplay}</a>
             </p>
             <a className="mt-4 inline-block font-bold underline decoration-ribbon underline-offset-4" href={site.nationalUrl}>
               National website
             </a>
           </div>
+          <p className="relative z-10 max-w-lg font-serif text-3xl leading-tight text-navy md:justify-self-end md:pr-12 md:text-right md:text-4xl">
+            No child should fight cancer alone.
+          </p>
         </div>
       </section>
     </>
