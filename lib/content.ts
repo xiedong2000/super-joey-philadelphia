@@ -205,7 +205,7 @@ export const leaders: Leader[] = [
   {
     name: "Patrick Xie",
     role: "Co-President",
-    school: "Lower Moreland High School",
+    school: "Lower Moreland High School · Class of 2027",
     initials: "PX",
     bio: "Patrick Xie is co-president of Super Joey Foundation Philadelphia.",
     photo: "/photo/PatrickXie.jpg",
@@ -214,7 +214,7 @@ export const leaders: Leader[] = [
   {
     name: "Richard Wan",
     role: "Co-President",
-    school: "Central Bucks High School",
+    school: "Central Bucks High School · Class of 2027",
     initials: "RW",
     bio: "Richard Wan is co-president of the Philadelphia chapter.",
     photo: "/leadership/richard-wan.svg",
