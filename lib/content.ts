@@ -313,7 +313,7 @@ export const leaders: Leader[] = [
 
 export const joeyStory = [
   "Super Joey Foundation (SJF) was inspired by Joey, a courageous four-year-old known as Super Joey at Children’s Hospital Los Angeles. Born on Thanksgiving Day in 2011 in Ventura County, California, Joey was diagnosed with Stage III Wilms tumor in May 2013. Despite the challenges of cancer treatment, he faced each day with strength, a smile, and a love for superheroes, inspiring other children along the way. Though Joey passed away in February 2016, his legacy of love, joy, and courage lives on through the foundation.",
-  "Founded in 2019 by Meggie Ruan and Megan Xie, the SJF Philadelphia chapter carries Joey’s spirit forward by supporting families staying at Ronald McDonald House Charities. Through community service, sports, music, and charity sales, our team brings people together to raise funds, spread kindness, and bring hope to families facing childhood cancer. Inspired by Joey’s courage, we strive to make a meaningful difference, one act of kindness at a time."
+  "Founded in 2019 by Maggie Ruan and Megan Xie, the SJF Philadelphia chapter carries Joey’s spirit forward by supporting families staying at Ronald McDonald House Charities. Through community service, sports, music, and charity sales, our team brings people together to raise funds, spread kindness, and bring hope to families facing childhood cancer. Inspired by Joey’s courage, we strive to make a meaningful difference, one act of kindness at a time."
 ];
 
 export const waysToHelp = [
