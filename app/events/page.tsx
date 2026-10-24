@@ -20,7 +20,7 @@ export default function EventsPage() {
 
   return (
     <>
-      <PageIntro kicker="Activities" title="Five ways the Philadelphia chapter shows up.">
+      <PageIntro icon="activities" kicker="Activities" title="Five ways the Philadelphia chapter shows up.">
         <p>
           The yearly calendar is Serve with Love, the Charity Tennis Tournament,
           the Charity Concert, the July 4th Charity Sale, and Father’s Day Team

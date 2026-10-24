@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 export default function DonatePage() {
   return (
     <>
-      <PageIntro kicker="Donate" title="Support local youth and families.">
+      <PageIntro icon="donate" kicker="Donate" title="Support local youth and families.">
         <p>
           Super Joey is a youth organization dedicated to supporting families
           affected by childhood cancer. Donations help support Ronald McDonald

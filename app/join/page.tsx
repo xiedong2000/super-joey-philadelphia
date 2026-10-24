@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 export default function JoinPage() {
   return (
     <>
-      <PageIntro kicker="Join" title="Come help the next activity.">
+      <PageIntro icon="join" kicker="Join" title="Come help the next activity.">
         <p>
           Students, musicians, tennis players, and school groups are welcome.
           Send your name and the kind of help you can offer. The note goes to

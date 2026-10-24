@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 export default function ContactPage() {
   return (
     <>
-      <PageIntro kicker="Contact" title="Write to the chapter.">
+      <PageIntro icon="contact" kicker="Contact" title="Write to the chapter.">
         <p>
           New volunteers, schools, and families who want event details can use
           the addresses below. The phone number is the one published by the

@@ -3,8 +3,10 @@ import type { ReactNode } from "react";
 export type SiteIconName =
   | "email"
   | "phone"
+  | "about"
   | "instagram"
   | "youtube"
+  | "highlights"
   | "activities"
   | "leadership"
   | "alumni"
@@ -20,6 +22,12 @@ export function SiteIcon({
   className?: string;
 }) {
   const paths: Record<SiteIconName, ReactNode> = {
+    about: (
+      <>
+        <path d="M12 7c-2-1.5-4.5-2-9-2v14c4.5 0 7 .5 9 2 2-1.5 4.5-2 9-2V5c-4.5 0-7 .5-9 2Z" />
+        <path d="M12 7v14" />
+      </>
+    ),
     email: (
       <>
         <rect x="3" y="5" width="18" height="14" rx="2" />
@@ -40,6 +48,12 @@ export function SiteIcon({
       <>
         <path d="M21 8a2.5 2.5 0 0 0-1.8-1.8C17.6 5.8 12 5.8 12 5.8s-5.6 0-7.2.4A2.5 2.5 0 0 0 3 8a26 26 0 0 0-.4 4 26 26 0 0 0 .4 4 2.5 2.5 0 0 0 1.8 1.8c1.6.4 7.2.4 7.2.4s5.6 0 7.2-.4A2.5 2.5 0 0 0 21 16a26 26 0 0 0 .4-4 26 26 0 0 0-.4-4Z" />
         <path d="m10 9 5 3-5 3V9Z" fill="currentColor" stroke="none" />
+      </>
+    ),
+    highlights: (
+      <>
+        <rect x="3" y="5" width="18" height="14" rx="3" />
+        <path d="m10 9 5 3-5 3V9Z" />
       </>
     ),
     activities: (

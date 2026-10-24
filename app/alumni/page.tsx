@@ -36,7 +36,7 @@ const alumniByYear = [
 export default function AlumniPage() {
   return (
     <>
-      <PageIntro kicker="Alumni" title="Celebrating our alumni.">
+      <PageIntro icon="alumni" kicker="Alumni" title="Celebrating our alumni.">
         <p>
           We are proud of the students who have been part of the Philadelphia
           chapter. Meet our alumni by graduation year.

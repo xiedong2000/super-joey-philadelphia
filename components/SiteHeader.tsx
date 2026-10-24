@@ -1,18 +1,19 @@
 "use client";
 
 import Link from "next/link";
+import { SiteIcon, type SiteIconName } from "@/components/SiteIcon";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { hasDonationLink, site } from "@/lib/content";
 
 const links = [
-  { href: "/about", label: "About" },
-  { href: "/events", label: "Activities" },
-  { href: "/leadership", label: "Leadership" },
-  { href: "/alumni", label: "Alumni" },
-  { href: "/join", label: "Join" },
-  { href: "/contact", label: "Contact" },
-];
+  { href: "/about", label: "About", icon: "about" },
+  { href: "/events", label: "Activities", icon: "activities" },
+  { href: "/leadership", label: "Leadership", icon: "leadership" },
+  { href: "/alumni", label: "Alumni", icon: "alumni" },
+  { href: "/join", label: "Join", icon: "join" },
+  { href: "/contact", label: "Contact", icon: "contact" },
+] satisfies { href: string; label: string; icon: SiteIconName }[];
 
 function isCurrent(pathname: string, href: string) {
   return pathname === href || pathname.startsWith(`${href}/`);
@@ -92,8 +93,9 @@ export function SiteHeader() {
                   aria-current={
                     isCurrent(pathname, link.href) ? "page" : undefined
                   }
-                  className="block rounded-lg px-2 py-3 text-base font-semibold text-navy"
+                  className="flex items-center gap-3 rounded-lg px-2 py-3 text-base font-semibold text-navy"
                 >
+                  <SiteIcon name={link.icon} className="h-5 w-5" />
                   {link.label}
                 </Link>
               </li>
@@ -101,11 +103,12 @@ export function SiteHeader() {
             <li>
               <Link
                 href={hasDonationLink() ? site.donationUrl : "/donate"}
-                className="mt-2 block border border-navy bg-ribbon px-4 py-3 text-center text-base font-bold text-white shadow-[3px_3px_0_#171a2b]"
+                className="mt-2 flex items-center justify-center gap-3 border border-navy bg-ribbon px-4 py-3 text-base font-bold text-white shadow-[3px_3px_0_#171a2b]"
                 {...(hasDonationLink()
                   ? { target: "_blank", rel: "noopener noreferrer" }
                   : {})}
               >
+                <SiteIcon name="donate" className="h-5 w-5 text-white" />
                 Donate
               </Link>
             </li>

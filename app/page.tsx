@@ -11,6 +11,7 @@ import {
   waysToHelp,
 } from "@/lib/content";
 import { VideoGrid } from "@/components/VideoCard";
+import { SiteIcon } from "@/components/SiteIcon";
 
 const cardTones = ["bg-sun", "bg-coral", "bg-sky"];
 
@@ -200,7 +201,10 @@ export default function HomePage() {
         <div className="mx-auto w-full max-w-6xl px-5 py-20">
           <div className="flex flex-wrap items-end justify-between gap-4">
             <h2 className="font-serif text-5xl tracking-[-0.04em] text-navy">
-              The Philadelphia year
+              <span className="inline-flex items-center gap-3">
+                <SiteIcon name="activities" className="h-8 w-8 md:h-10 md:w-10" />
+                The Philadelphia year
+              </span>
             </h2>
             <Link href="/events" className="font-bold underline decoration-ribbon underline-offset-4">
               All activities
@@ -225,7 +229,10 @@ export default function HomePage() {
 
       <section className="mx-auto w-full max-w-6xl px-5 py-20">
         <div className="flex flex-wrap items-end justify-between gap-4">
-          <h2 className="font-serif text-5xl tracking-[-0.04em] text-navy">Highlights</h2>
+          <h2 className="inline-flex items-center gap-3 font-serif text-5xl tracking-[-0.04em] text-navy">
+            <SiteIcon name="highlights" className="h-8 w-8" />
+            Highlights
+          </h2>
           <Link href="/events#videos" className="font-bold underline decoration-ribbon underline-offset-4">
             All videos
           </Link>
@@ -236,7 +243,10 @@ export default function HomePage() {
       </section>
 
       <section className="mx-auto w-full max-w-6xl px-5 py-20">
-        <h2 className="font-serif text-5xl tracking-[-0.04em] text-navy">Leadership</h2>
+        <h2 className="inline-flex items-center gap-3 font-serif text-5xl tracking-[-0.04em] text-navy">
+          <SiteIcon name="leadership" className="h-8 w-8" />
+          Leadership
+        </h2>
         <ul className="mt-8 grid gap-4 md:grid-cols-2">
           {leaders
             .filter((leader) => leader.role === "Co-President")

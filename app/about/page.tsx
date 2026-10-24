@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   return (
     <>
-      <PageIntro kicker="About" title="A Philadelphia chapter of a national foundation.">
+      <PageIntro icon="about" kicker="About" title="A Philadelphia chapter of a national foundation.">
         <p>
           Super Joey Foundation Philadelphia is the local chapter team. Students
           here organize volunteers and yearly charity activities for the Super
