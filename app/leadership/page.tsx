@@ -38,33 +38,16 @@ export default function LeadershipPage() {
                   <p className="font-semibold text-gold-deep">{leader.role}</p>
                 </div>
               </div>
-              <p className="mt-5 text-sm font-semibold uppercase tracking-[0.14em] text-muted">
-                {leader.school}
-              </p>
+              {leader.school ? (
+                <p className="mt-5 text-sm font-semibold uppercase tracking-[0.14em] text-muted">
+                  {leader.school}
+                </p>
+              ) : null}
               <p className="mt-3 text-lg leading-8">{leader.bio}</p>
             </li>
           ))}
         </ul>
 
-        <section className="mt-12 max-w-3xl">
-          <h2 className="font-serif text-3xl text-navy">More of the team</h2>
-          <p className="mt-4 text-lg leading-8 text-muted">
-            Other officers&apos; information will be added soon.
-          </p>
-          <p className="mt-4">
-            <a
-              className="font-semibold text-navy underline decoration-ribbon underline-offset-4"
-              href={site.volunteersUrl}
-            >
-              See the national volunteer list
-            </a>
-          </p>
-          <p className="mt-6">
-            <Link href="/join" className="font-semibold text-gold-deep">
-              Ask about joining the team
-            </Link>
-          </p>
-        </section>
       </div>
     </>
   );
