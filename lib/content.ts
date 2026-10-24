@@ -161,7 +161,7 @@ export const videos: ChapterVideo[] = [
   },
   {
     id: "7XkiFFhk6lc",
-    title: "2026 The 6th Annual Super Joey Philadelphia Charity Tennis",
+    title: "2026 The 6th Annual Super Joey Philadelphia Charity Video",
     year: "2026",
     activity: "charity-tennis-tournament",
     short: true,

@@ -182,7 +182,12 @@ export default function HomePage() {
           </Link>
         </div>
         <div className="mt-8">
-          <VideoGrid videos={videos.slice(0, 2)} />
+          <VideoGrid
+            videos={[
+              ...videos.filter((video) => video.year === "2026"),
+              ...videos.filter((video) => video.year !== "2026").slice(0, 1),
+            ]}
+          />
         </div>
       </section>
 
