@@ -157,6 +157,7 @@ export const videos: ChapterVideo[] = [
     id: "mkt-2DY0yuM",
     title: "2022 Super Joey Foundation Meal of Love at McDonald House",
     year: "2022",
+    activity: "serve-for-love",
     short: false,
   },
   {
@@ -197,6 +198,7 @@ export const videos: ChapterVideo[] = [
     id: "5UwBuHCdqXc",
     title: "2022 Meal of Love",
     year: "2022",
+    activity: "serve-for-love",
     short: true,
   },
   {

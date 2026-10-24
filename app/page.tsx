@@ -196,18 +196,6 @@ export default function HomePage() {
         </p>
       </section>
 
-      <section className="mx-auto w-full max-w-6xl px-5 py-20">
-        <div className="flex flex-wrap items-end justify-between gap-4">
-          <h2 className="font-serif text-5xl tracking-[-0.04em] text-navy">Watch</h2>
-          <Link href="/events#videos" className="font-bold underline decoration-ribbon underline-offset-4">
-            All videos
-          </Link>
-        </div>
-        <div className="mt-8">
-          <VideoGrid videos={featuredVideos} />
-        </div>
-      </section>
-
       <section className="bg-card">
         <div className="mx-auto w-full max-w-6xl px-5 py-20">
           <div className="flex flex-wrap items-end justify-between gap-4">
@@ -232,6 +220,18 @@ export default function HomePage() {
               </li>
             ))}
           </ul>
+        </div>
+      </section>
+
+      <section className="mx-auto w-full max-w-6xl px-5 py-20">
+        <div className="flex flex-wrap items-end justify-between gap-4">
+          <h2 className="font-serif text-5xl tracking-[-0.04em] text-navy">Highlights</h2>
+          <Link href="/events#videos" className="font-bold underline decoration-ribbon underline-offset-4">
+            All videos
+          </Link>
+        </div>
+        <div className="mt-8">
+          <VideoGrid videos={featuredVideos} />
         </div>
       </section>
 
