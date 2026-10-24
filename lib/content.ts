@@ -199,14 +199,14 @@ export const leaders: Leader[] = [
     role: "Co-President",
     school: "Lower Moreland High School",
     initials: "PX",
-    bio: "Patrick Xie is co-president of Super Joey Foundation Philadelphia. The Super Joey Foundation lists him as a Philadelphia chapter team leader.",
+    bio: "Patrick Xie is co-president of Super Joey Foundation Philadelphia.",
   },
   {
     name: "Richard Wan",
     role: "Co-President",
     school: "Central Bucks High School",
     initials: "RW",
-    bio: "Richard Wan is co-president of the Philadelphia chapter. The Super Joey Foundation lists him as a Philadelphia chapter team leader.",
+    bio: "Richard Wan is co-president of the Philadelphia chapter.",
   },
 ];
 
