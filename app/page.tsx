@@ -31,23 +31,23 @@ export default function HomePage() {
   return (
     <>
       <section className="overflow-hidden">
-        <div className="mx-auto grid w-full max-w-6xl items-center gap-10 px-5 pb-16 pt-12 md:grid-cols-2 md:pb-24 md:pt-16">
+        <div className="mx-auto grid w-full max-w-6xl items-center gap-4 px-5 pb-4 pt-0 md:grid-cols-2 md:gap-6 md:pb-8 md:pt-0">
           <div>
             <p className="flex items-center text-xs font-bold uppercase tracking-[0.16em] text-navy">
               <span className="mr-2 inline-block h-2.5 w-2.5 rounded-full bg-ribbon shadow-[0_0_0_6px_#f22e3224]" />
               Philadelphia chapter
             </p>
-            <h1 className="mt-5 font-serif text-[clamp(3.4rem,7vw,6.6rem)] leading-[0.86] tracking-[-0.045em] text-navy">
+            <h1 className="mt-2 font-serif text-[clamp(3.4rem,7vw,6.6rem)] leading-[0.86] tracking-[-0.045em] text-navy">
               Open hearts.
               <span className="mt-1 block italic text-ribbon">Philadelphia</span>
               <span className="block italic text-ribbon">action.</span>
             </h1>
-            <p className="mt-8 max-w-xl text-lg leading-8 text-navy/80">
+            <p className="mt-4 max-w-xl text-lg leading-8 text-navy/80">
               Student volunteers in Philadelphia show up for children and
               families facing cancer, through service, sport, music, and
               community days.
             </p>
-            <div className="mt-8 flex flex-wrap items-center gap-6">
+            <div className="mt-6 flex flex-wrap items-center gap-6">
               <Link
                 href="/join"
                 className="inline-flex min-h-12 items-center border border-navy bg-navy px-5 font-bold text-white shadow-[4px_4px_0_#f22e32] transition hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-[2px_2px_0_#f22e32]"
@@ -60,17 +60,14 @@ export default function HomePage() {
             </div>
           </div>
 
-          <div className="relative grid min-h-[420px] place-items-center">
+          <div className="relative grid min-h-[300px] place-items-center md:min-h-[360px]">
             <div className="sunburst absolute aspect-square w-[min(78vw,460px)] rounded-full opacity-90" />
-            <figure className="relative z-10 w-[min(78vw,420px)] rotate-2 border border-navy/20 bg-card p-3 shadow-[12px_16px_0_#171a2b14]">
+            <figure className="relative z-10 flex w-[min(72vw,430px)] rotate-2 items-center justify-center overflow-hidden rounded-full border border-navy/20 bg-card p-4 shadow-[12px_16px_0_#171a2b14]">
               <img
-                src="/super-joey-icon.png"
+                src="/photo/SuperJoeyHomeIcon.png"
                 alt="Super Joey"
-                className="mx-auto aspect-square w-48 object-contain sm:w-64"
+                className="mx-auto aspect-square w-full max-w-[500px] rounded-full object-contain"
               />
-              <figcaption className="px-2 pb-2 pt-3 font-serif text-2xl text-navy">
-                Serve. Play. Gather.
-              </figcaption>
             </figure>
           </div>
         </div>
