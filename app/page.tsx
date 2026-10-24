@@ -64,9 +64,9 @@ export default function HomePage() {
             <div className="sunburst absolute aspect-square w-[min(78vw,460px)] rounded-full opacity-90" />
             <figure className="relative z-10 flex w-[min(72vw,430px)] rotate-2 items-center justify-center overflow-hidden rounded-full border border-navy/20 bg-card p-4 shadow-[12px_16px_0_#171a2b14]">
               <img
-                src="/photo/SuperJoeyHomeIcon.png"
+                src="/photo/SuperJoeyHomeIconNew.png"
                 alt="Super Joey"
-                className="mx-auto aspect-square w-full max-w-[500px] rounded-full object-contain"
+                className="mx-auto aspect-square w-full max-w-[560px] rounded-full object-contain"
               />
             </figure>
           </div>

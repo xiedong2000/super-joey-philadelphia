@@ -19,8 +19,19 @@ export default function DonatePage() {
         </p>
       </PageIntro>
 
-      <div className="mx-auto grid w-full max-w-6xl gap-10 px-5 py-14 md:grid-cols-12">
-        <div className="md:col-span-7">
+      <div className="mx-auto w-full max-w-6xl px-5 py-14">
+        <div className="mb-10 overflow-hidden rounded-[2rem] border border-line bg-card shadow-[0_24px_50px_-36px_rgba(22,48,68,0.7)]">
+          <div className="flex min-h-[320px] items-center justify-center bg-[#edf3f8] p-3 md:min-h-[420px] md:p-5">
+            <img
+              src="/photo/Donations.png"
+              alt="Super Joey Foundation donations"
+              className="h-full w-full object-contain"
+            />
+          </div>
+        </div>
+
+        <div className="grid gap-10 md:grid-cols-12">
+          <div className="md:col-span-7">
           <h2 className="font-serif text-3xl text-navy">Before you give</h2>
           <p className="mt-4 text-lg leading-8">
             Use the chapter’s approved donation page. On that page, confirm the
@@ -35,10 +46,10 @@ export default function DonatePage() {
             .
           </p>
         </div>
-        <aside className="rounded-3xl bg-navy p-7 text-paper md:col-span-5">
-          {hasDonationLink() ? (
-            <>
-              <h2 className="font-serif text-3xl">Give now</h2>
+          <aside className="rounded-3xl bg-navy p-7 text-paper md:col-span-5">
+            {hasDonationLink() ? (
+              <>
+                <h2 className="font-serif text-3xl">Give now</h2>
               <p className="mt-3 leading-7 text-paper/80">
                 This button opens the chapter’s approved donation page.
               </p>
@@ -51,24 +62,25 @@ export default function DonatePage() {
                 Donate
               </a>
             </>
-          ) : (
-            <>
-              <h2 className="font-serif text-3xl">Giving link coming</h2>
-              <p className="mt-3 leading-7 text-paper/80">
-                The approved donation link is not on the site yet. When the
-                chapter adds it, the button on this page will open that page.
-              </p>
-              <a
-                href={`mailto:${site.email}?subject=${encodeURIComponent(
-                  "Donation question — Super Joey Philadelphia",
-                )}`}
-                className="mt-6 inline-block rounded-full bg-ribbon px-5 py-3 font-semibold text-navy"
-              >
-                Ask about a gift
-              </a>
-            </>
-          )}
-        </aside>
+            ) : (
+              <>
+                <h2 className="font-serif text-3xl">Giving link coming</h2>
+                <p className="mt-3 leading-7 text-paper/80">
+                  The approved donation link is not on the site yet. When the
+                  chapter adds it, the button on this page will open that page.
+                </p>
+                <a
+                  href={`mailto:${site.email}?subject=${encodeURIComponent(
+                    "Donation question — Super Joey Philadelphia",
+                  )}`}
+                  className="mt-6 inline-block rounded-full bg-ribbon px-5 py-3 font-semibold text-navy"
+                >
+                  Ask about a gift
+                </a>
+              </>
+            )}
+          </aside>
+        </div>
       </div>
     </>
   );
