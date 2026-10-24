@@ -63,9 +63,12 @@ export default function DonatePage() {
           </div>
 
           <aside className="rounded-3xl border border-[#bfdff3]/70 bg-[#eaf6ff] p-7 text-navy md:col-span-5">
-            <h2 className="font-serif text-3xl text-navy">Give by Venmo or Zelle</h2>
+            <h2 className="font-serif text-3xl text-navy">
+              Donate by Venmo, Zelle, or PayPal
+            </h2>
             <p className="mt-3 leading-7 text-navy/80">
-              Scan a code to donate. For Zelle, use the email and note below.
+              Scan the Venmo or Zelle code, or use the PayPal email below. For
+              Zelle, include the note shown.
             </p>
             <div className="mt-6 grid gap-4 sm:grid-cols-2">
               <figure className="rounded-2xl border border-line bg-white p-4 text-center">
