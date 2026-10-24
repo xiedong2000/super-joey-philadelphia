@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import { ContactIcon } from "@/components/ContactIcon";
 import { PageIntro } from "@/components/PageIntro";
+import { SiteIcon } from "@/components/SiteIcon";
 import { site } from "@/lib/content";
 
 export const metadata: Metadata = {
@@ -29,7 +29,7 @@ export default function ContactPage() {
             <p className="text-xs font-semibold uppercase tracking-[0.16em] text-gold-deep">
               Email
             </p>
-            <ContactIcon name="email" />
+            <SiteIcon name="email" />
           </div>
           <p className="mt-3 font-serif text-3xl text-navy [overflow-wrap:anywhere]">
             {site.email}
@@ -46,7 +46,7 @@ export default function ContactPage() {
             <p className="text-xs font-semibold uppercase tracking-[0.16em] text-gold-deep">
               Phone
             </p>
-            <ContactIcon name="phone" />
+            <SiteIcon name="phone" />
           </div>
           <p className="mt-3 font-serif text-3xl text-navy [overflow-wrap:anywhere]">
             {site.phoneDisplay}
@@ -61,7 +61,7 @@ export default function ContactPage() {
             <p className="text-xs font-semibold uppercase tracking-[0.16em] text-gold-deep">
               Instagram
             </p>
-            <ContactIcon name="instagram" />
+            <SiteIcon name="instagram" />
           </div>
           <p className="mt-3 font-serif text-3xl text-navy [overflow-wrap:anywhere]">
             {site.instagramHandle}
@@ -76,7 +76,7 @@ export default function ContactPage() {
             <p className="text-xs font-semibold uppercase tracking-[0.16em] text-gold-deep">
               YouTube
             </p>
-            <ContactIcon name="youtube" />
+            <SiteIcon name="youtube" />
           </div>
           <p className="mt-3 font-serif text-3xl text-navy [overflow-wrap:anywhere]">
             Watch the channel

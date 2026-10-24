@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ContactIcon } from "@/components/ContactIcon";
+import { SiteIcon } from "@/components/SiteIcon";
 import { site } from "@/lib/content";
 
 export function SiteFooter() {
@@ -25,32 +25,38 @@ export function SiteFooter() {
           </p>
           <ul className="mt-3 space-y-2 text-sm text-navy/80">
             <li>
-              <Link href="/events" className="hover:text-ribbon">
+              <Link href="/events" className="inline-flex items-center gap-2 hover:text-ribbon">
+                <SiteIcon name="activities" className="h-4 w-4" />
                 Activities
               </Link>
             </li>
             <li>
-              <Link href="/leadership" className="hover:text-ribbon">
+              <Link href="/leadership" className="inline-flex items-center gap-2 hover:text-ribbon">
+                <SiteIcon name="leadership" className="h-4 w-4" />
                 Leadership
               </Link>
             </li>
             <li>
-              <Link href="/alumni" className="hover:text-ribbon">
+              <Link href="/alumni" className="inline-flex items-center gap-2 hover:text-ribbon">
+                <SiteIcon name="alumni" className="h-4 w-4" />
                 Alumni
               </Link>
             </li>
             <li>
-              <Link href="/join" className="hover:text-ribbon">
+              <Link href="/join" className="inline-flex items-center gap-2 hover:text-ribbon">
+                <SiteIcon name="join" className="h-4 w-4" />
                 Join
               </Link>
             </li>
             <li>
-              <Link href="/donate" className="hover:text-ribbon">
+              <Link href="/donate" className="inline-flex items-center gap-2 hover:text-ribbon">
+                <SiteIcon name="donate" className="h-4 w-4" />
                 Donate
               </Link>
             </li>
             <li>
-              <Link href="/contact" className="hover:text-ribbon">
+              <Link href="/contact" className="inline-flex items-center gap-2 hover:text-ribbon">
+                <SiteIcon name="contact" className="h-4 w-4" />
                 Contact
               </Link>
             </li>
@@ -63,19 +69,19 @@ export function SiteFooter() {
           <ul className="mt-3 space-y-2 text-sm text-navy/80">
             <li>
               <a className="inline-flex items-center gap-2 hover:text-ribbon" href={site.instagramUrl}>
-                <ContactIcon name="instagram" className="h-4 w-4" />
+                <SiteIcon name="instagram" className="h-4 w-4" />
                 <span>Instagram {site.instagramHandle}</span>
               </a>
             </li>
             <li>
               <a className="inline-flex items-center gap-2 hover:text-ribbon" href={site.youtubeUrl}>
-                <ContactIcon name="youtube" className="h-4 w-4" />
+                <SiteIcon name="youtube" className="h-4 w-4" />
                 <span>{site.youtubeLabel}</span>
               </a>
             </li>
             <li>
               <a className="inline-flex items-center gap-2 hover:text-ribbon" href={`mailto:${site.email}`}>
-                <ContactIcon name="email" className="h-4 w-4" />
+                <SiteIcon name="email" className="h-4 w-4" />
                 <span>{site.email}</span>
               </a>
             </li>
