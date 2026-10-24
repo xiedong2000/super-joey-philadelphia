@@ -12,7 +12,9 @@ export const metadata: Metadata = {
 export default function LeadershipPage() {
   return (
     <>
-      <PageIntro kicker="Leadership" title="The officers guiding Philadelphia." />
+      <PageIntro kicker="Leadership" title="The officers guiding Philadelphia.">
+        <></>
+      </PageIntro>
 
       <div className="mx-auto w-full max-w-6xl px-5 py-14">
         <ul className="grid gap-6 md:grid-cols-2">
