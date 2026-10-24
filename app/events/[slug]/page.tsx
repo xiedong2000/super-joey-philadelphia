@@ -45,6 +45,11 @@ export default async function EventPage({ params }: EventPageProps) {
       <h1 className="mt-3 max-w-3xl font-serif text-5xl leading-tight text-navy">
         {activity.title}
       </h1>
+      <img
+        src={activity.photo}
+        alt={activity.title}
+        className="mt-6 h-72 w-full rounded-3xl object-cover shadow-[0_24px_50px_-36px_rgba(22,48,68,0.7)]"
+      />
       <p className="mt-5 max-w-3xl text-xl leading-8">{activity.summary}</p>
       <div className="mt-8 max-w-3xl space-y-4 text-lg leading-8 text-muted">
         {activity.story.map((paragraph) => (

@@ -49,22 +49,29 @@ export default function EventsPage() {
           <h2 className="font-serif text-3xl text-navy">Yearly activities</h2>
           <ul className="mt-6 grid gap-4">
             {activities.map((activity) => (
-              <li key={activity.slug} className="border border-line bg-card p-6 md:p-8">
-                <p className="text-sm font-semibold uppercase tracking-[0.16em] text-gold-deep">
-                  {activity.cadence} · Date to be announced
-                </p>
-                <h3 className="mt-3 font-serif text-3xl text-navy">{activity.title}</h3>
-                <p className="mt-3 max-w-2xl text-lg leading-8 text-muted">
-                  {activity.summary}
-                </p>
-                <p className="mt-3 text-sm font-semibold text-navy">{activity.invitation}</p>
-                <div className="mt-5 flex flex-col gap-3 sm:flex-row">
-                  <Link href={`/events/${activity.slug}`} className="font-semibold text-gold-deep">
-                    Read more
-                  </Link>
-                  <Link href="/join" className="font-semibold text-navy">
-                    Ask for a spot
-                  </Link>
+              <li key={activity.slug} className="overflow-hidden border border-line bg-card md:p-8">
+                <img
+                  src={activity.photo}
+                  alt={activity.title}
+                  className="h-56 w-full object-cover"
+                />
+                <div className="p-6">
+                  <p className="text-sm font-semibold uppercase tracking-[0.16em] text-gold-deep">
+                    {activity.cadence} · Date to be announced
+                  </p>
+                  <h3 className="mt-3 font-serif text-3xl text-navy">{activity.title}</h3>
+                  <p className="mt-3 max-w-2xl text-lg leading-8 text-muted">
+                    {activity.summary}
+                  </p>
+                  <p className="mt-3 text-sm font-semibold text-navy">{activity.invitation}</p>
+                  <div className="mt-5 flex flex-col gap-3 sm:flex-row">
+                    <Link href={`/events/${activity.slug}`} className="font-semibold text-gold-deep">
+                      Read more
+                    </Link>
+                    <Link href="/join" className="font-semibold text-navy">
+                      Ask for a spot
+                    </Link>
+                  </div>
                 </div>
               </li>
             ))}
