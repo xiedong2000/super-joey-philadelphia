@@ -15,19 +15,7 @@ import { SiteIcon } from "@/components/SiteIcon";
 
 const cardTones = ["bg-sun", "bg-coral", "bg-sky"];
 
-const ticker = [
-  "No child should fight alone",
-  "Philadelphia cares",
-  "Hope lives here",
-  "Serve with Love",
-  "Charity tennis",
-  "Charity concert",
-  "July 4th sale",
-  "Father’s Day team day",
-];
-
 export default function HomePage() {
-  const loop = [...ticker, ...ticker];
   const sortedVideos = [...videos].sort((a, b) => {
     const getYear = (value: string) => (value ? Number(value) : -1);
     return getYear(b.year) - getYear(a.year);
@@ -51,7 +39,7 @@ export default function HomePage() {
               Philadelphia chapter
             </p>
             <h1 className="mt-2 font-serif text-[clamp(2.8rem,5.4vw,5.2rem)] leading-[0.86] tracking-[-0.045em] text-gold">
-              Kindness Is a Choice.
+              Kindness is a Choice.
               <span className="mt-1 block text-[0.72em] italic text-ribbon">Philadelphia Cares.</span>
             </h1>
             <p className="mt-4 max-w-xl text-lg leading-8 text-navy/80">
@@ -84,71 +72,54 @@ export default function HomePage() {
         </div>
       </section>
 
-      <div className="overflow-hidden border-y border-[#bfdff3]/70 bg-[#eaf6ff] text-navy">
-        <div className="ticker-track flex w-max">
-          {[0, 1].map((copy) => (
-            <p
-              key={copy}
-              className="flex items-center py-3.5 text-xs font-bold uppercase tracking-[0.14em]"
-              aria-hidden={copy === 1}
-            >
-              {loop.map((phrase, index) => (
-                <span key={`${copy}-${index}`} className="px-4">
-                  {phrase}
-                  <span className="pl-4 text-ribbon">✦</span>
-                </span>
-              ))}
+      <section className="border-y border-line bg-card">
+        <div className="mx-auto w-full max-w-6xl px-5 py-20">
+          <div className="grid gap-8 md:grid-cols-12 md:items-end">
+            <p className="text-xs font-bold uppercase tracking-[0.16em] text-navy md:col-span-3">
+              How you can show up
             </p>
-          ))}
+            <h2 className="font-serif text-[clamp(2.8rem,5vw,4.6rem)] leading-[0.92] tracking-[-0.04em] text-navy md:col-span-6">
+              Make a difference <span className="italic text-ribbon">in Philadelphia.</span>
+            </h2>
+            <p className="text-navy/80 md:col-span-3">
+              Come for an afternoon, bring a skill, or help fund the work. There
+              is a place for students, families, and schools.
+            </p>
+          </div>
+          <ol className="mt-10 grid auto-rows-fr gap-4 md:grid-cols-3">
+            {waysToHelp.map((way, index) => (
+              <li key={way.href} className="h-full">
+                <Link
+                  href={way.href}
+                  className={`flex h-full min-h-80 flex-col border border-navy p-6 transition hover:-translate-y-1 hover:shadow-[7px_8px_0_#171a2b] ${cardTones[index]}`}
+                >
+                  <span className="self-end text-xs font-bold tracking-[0.14em]">
+                    0{index + 1}
+                  </span>
+                  <span className="mt-10 flex h-16 w-16 items-center justify-center rounded-full border border-navy bg-white/40">
+                    {index === 0 ? (
+                      <svg viewBox="0 0 24 24" aria-hidden="true" className="h-8 w-8 stroke-[2.4] text-ribbon">
+                        <path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round"/>
+                      </svg>
+                    ) : index === 1 ? (
+                      <svg viewBox="0 0 24 24" aria-hidden="true" className="h-8 w-8 fill-none stroke-[2.4] text-ribbon">
+                        <path d="M12 5v14M5 12h14" stroke="currentColor" strokeLinecap="round"/>
+                      </svg>
+                    ) : (
+                      <svg viewBox="0 0 24 24" aria-hidden="true" className="h-8 w-8 fill-current text-ribbon">
+                        <path d="M12 20.2c-.3 0-.6-.1-.8-.3l-6.8-6.5C2.7 11.7 2 10.5 2 9.2 2 6.8 3.8 5 6.2 5c1.8 0 3.2 1 4 2.1C10.9 6 12.3 5 14.1 5 16.5 5 18.3 6.8 18.3 9.2c0 1.3-.7 2.5-2.5 4.2l-6.8 6.5c-.2.2-.5.3-.8.3Z"/>
+                      </svg>
+                    )}
+                  </span>
+                  <span className="mt-8 font-serif text-3xl leading-none text-navy">
+                    {way.title}
+                  </span>
+                  <span className="mt-3 leading-7 text-navy/80">{way.text}</span>
+                </Link>
+              </li>
+            ))}
+          </ol>
         </div>
-      </div>
-
-      <section className="mx-auto w-full max-w-6xl px-5 py-20">
-        <div className="grid gap-8 md:grid-cols-12 md:items-end">
-          <p className="text-xs font-bold uppercase tracking-[0.16em] text-navy md:col-span-3">
-            How you can show up
-          </p>
-          <h2 className="font-serif text-[clamp(2.8rem,5vw,4.6rem)] leading-[0.92] tracking-[-0.04em] text-navy md:col-span-6">
-            Make a difference <span className="italic text-ribbon">in Philadelphia.</span>
-          </h2>
-          <p className="text-navy/80 md:col-span-3">
-            Come for an afternoon, bring a skill, or help fund the work. There
-            is a place for students, families, and schools.
-          </p>
-        </div>
-        <ol className="mt-10 grid auto-rows-fr gap-4 md:grid-cols-3">
-          {waysToHelp.map((way, index) => (
-            <li key={way.href} className="h-full">
-              <Link
-                href={way.href}
-                className={`flex h-full min-h-80 flex-col border border-navy p-6 transition hover:-translate-y-1 hover:shadow-[7px_8px_0_#171a2b] ${cardTones[index]}`}
-              >
-                <span className="self-end text-xs font-bold tracking-[0.14em]">
-                  0{index + 1}
-                </span>
-                <span className="mt-10 flex h-16 w-16 items-center justify-center rounded-full border border-navy bg-white/40">
-                  {index === 0 ? (
-                    <svg viewBox="0 0 24 24" aria-hidden="true" className="h-8 w-8 stroke-[2.4] text-ribbon">
-                      <path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round"/>
-                    </svg>
-                  ) : index === 1 ? (
-                    <svg viewBox="0 0 24 24" aria-hidden="true" className="h-8 w-8 fill-none stroke-[2.4] text-ribbon">
-                      <path d="M12 5v14M5 12h14" stroke="currentColor" strokeLinecap="round"/>
-                    </svg>
-                  ) : (
-                    <svg viewBox="0 0 24 24" aria-hidden="true" className="h-8 w-8 fill-current text-ribbon">
-                      <path d="M12 20.2c-.3 0-.6-.1-.8-.3l-6.8-6.5C2.7 11.7 2 10.5 2 9.2 2 6.8 3.8 5 6.2 5c1.8 0 3.2 1 4 2.1C10.9 6 12.3 5 14.1 5 16.5 5 18.3 6.8 18.3 9.2c0 1.3-.7 2.5-2.5 4.2l-6.8 6.5c-.2.2-.5.3-.8.3Z"/>
-                    </svg>
-                  )}
-                </span>
-                <span className="mt-8 font-serif text-3xl leading-none text-navy">
-                  {way.title}
-                </span>
-                <span className="mt-3 leading-7 text-navy/80">{way.text}</span>
-              </Link>
-            </li>
-          ))}
-        </ol>
       </section>
 
       <section className="border-y border-line bg-card">

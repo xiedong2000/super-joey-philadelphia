@@ -43,22 +43,6 @@ textarea:focus-visible {
   outline-offset: 3px;
 }
 
-.ticker-track {
-  animation: ticker 28s linear infinite;
-}
-
-@keyframes ticker {
-  to {
-    transform: translateX(-50%);
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .ticker-track {
-    animation: none;
-  }
-}
-
 .sunburst {
   background: repeating-conic-gradient(
     from -6deg,
