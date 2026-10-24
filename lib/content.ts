@@ -233,7 +233,7 @@ export const leaders: Leader[] = [
     role: "Co-President",
     school: "Lower Moreland High School · Class of 2027",
     initials: "PX",
-    bio: "Patrick enjoys math and computer science, classical piano, jazz saxophone, and competing on his varsity tennis team. He enjoys helping others by tutoring fellow students, supporting younger learners as a teaching assistant, and participating in charity events through sports, music, and service.",
+    bio: "Patrick Xie is co-president of the Philadelphia chapter.",
     photo: "/photo/PatrickXie.jpg",
     photoAlt: "Patrick Xie portrait",
   },
