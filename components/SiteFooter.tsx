@@ -88,6 +88,9 @@ export function SiteFooter() {
           </ul>
         </div>
       </div>
+      <p className="border-t border-[#bfdff3]/70 px-5 py-4 text-center text-xs text-navy/60">
+        © 2026 Super Joey Foundation
+      </p>
     </footer>
   );
 }
