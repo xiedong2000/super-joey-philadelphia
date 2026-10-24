@@ -265,7 +265,7 @@ export default function HomePage() {
       </section>
 
       <section className="border-t border-[#bfdff3]/70 bg-[#eaf6ff] text-navy">
-        <div className="relative mx-auto grid w-full max-w-6xl gap-10 overflow-hidden px-5 py-16 md:grid-cols-2">
+        <div className="relative mx-auto grid w-full max-w-6xl gap-10 overflow-hidden px-5 py-16">
           <div
             className="pointer-events-none absolute -right-24 -top-24 hidden h-80 w-80 rounded-full border-[48px] border-ribbon md:block"
             aria-hidden="true"
@@ -280,25 +280,6 @@ export default function HomePage() {
             <a className="mt-4 inline-block font-bold underline decoration-ribbon underline-offset-4" href={site.nationalUrl}>
               National website
             </a>
-          </div>
-          <div className="relative">
-            <p className="text-xs font-bold uppercase tracking-[0.16em] text-ribbon">
-              Philadelphia
-            </p>
-            <p className="mt-3 font-serif text-3xl [overflow-wrap:anywhere] text-navy sm:text-4xl">
-              <a href={`mailto:${site.email}`}>{site.email}</a>
-            </p>
-            <p className="mt-4 font-serif text-3xl text-navy">Follow the chapter</p>
-            <p className="mt-3">
-              <a className="font-bold underline decoration-ribbon underline-offset-4" href={site.instagramUrl}>
-                Instagram {site.instagramHandle}
-              </a>
-            </p>
-            <p className="mt-2">
-              <a className="font-bold underline decoration-ribbon underline-offset-4" href={site.youtubeUrl}>
-                {site.youtubeLabel}
-              </a>
-            </p>
           </div>
         </div>
       </section>

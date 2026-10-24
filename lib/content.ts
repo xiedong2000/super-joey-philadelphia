@@ -184,7 +184,8 @@ export const videos: ChapterVideo[] = [
   {
     id: "iVo_yG9zW1Q",
     title: "2026 The 6th Annual Spring Charity Concert",
-    year: "",
+    year: "2026",
+    activity: "charity-concert",
     short: true,
   },
   {
@@ -211,7 +212,9 @@ export const videos: ChapterVideo[] = [
 ];
 
 export function videosFor(activity: string) {
-  return videos.filter((video) => video.activity === activity);
+  return videos
+    .filter((video) => video.activity === activity)
+    .sort((a, b) => Number(b.year || -1) - Number(a.year || -1));
 }
 
 export type Leader = {
