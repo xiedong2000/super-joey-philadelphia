@@ -50,8 +50,8 @@ export default function HomePage() {
               Philadelphia chapter
             </p>
             <h1 className="mt-2 font-serif text-[clamp(2.8rem,5.4vw,5.2rem)] leading-[0.86] tracking-[-0.045em] text-gold">
-              Kindness is a choice.
-              <span className="mt-1 block text-[0.72em] italic text-ribbon">Philadelphia action.</span>
+              Kindness Is a Choice.
+              <span className="mt-1 block text-[0.72em] italic text-ribbon">Philadelphia Cares.</span>
             </h1>
             <p className="mt-4 max-w-xl text-lg leading-8 text-navy/80">
               Student volunteers in Philadelphia show up for children and

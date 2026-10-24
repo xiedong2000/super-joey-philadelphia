@@ -8,10 +8,29 @@ export const metadata: Metadata = {
 };
 
 const alumniByYear = [
-  { year: "2026", names: ["Cleo Chen", "Brain Xu", "Brandon Zhang"] },
-  { year: "2025", names: ["Liya Ma", "Esabella Xie"] },
-  { year: "2024", names: ["Maggie Ruan", "Sophia Hu", "Megan Xie"] },
-  { year: "2023", names: ["Charlie Wan", "Sam Wang"] },
+  {
+    year: "2026",
+    graduates: ["Brendan Zhang", "Brian Xu", "Chloe Zhou"],
+  },
+  {
+    year: "2025",
+    graduates: ["Bella Xie", "Liya Ma"],
+  },
+  {
+    year: "2024",
+    graduates: [
+      "Andrew Dai",
+      "Karen Zhou",
+      "Maggie Ruan",
+      "Megan Xie",
+      "Neng Jiang",
+      "Sophia Hu",
+    ],
+  },
+  {
+    year: "2023",
+    graduates: ["Charley Wan", "Jerry Yan", "Sam Wang"],
+  },
 ];
 
 export default function AlumniPage() {
@@ -30,7 +49,7 @@ export default function AlumniPage() {
             Alumni by graduation year
           </h2>
           <div className="mt-6 grid gap-6 md:grid-cols-2">
-            {alumniByYear.map(({ year, names }) => (
+            {alumniByYear.map(({ year, graduates }) => (
               <section
                 key={year}
                 aria-labelledby={`class-${year}`}
@@ -40,7 +59,7 @@ export default function AlumniPage() {
                   Class of {year}
                 </h3>
                 <ul className="mt-4 space-y-2 text-lg leading-8">
-                  {names.map((name) => (
+                  {graduates.map((name) => (
                     <li key={name}>{name}</li>
                   ))}
                 </ul>
