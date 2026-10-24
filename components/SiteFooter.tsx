@@ -34,6 +34,11 @@ export function SiteFooter() {
               </Link>
             </li>
             <li>
+              <Link href="/alumni" className="hover:text-ribbon">
+                Alumni
+              </Link>
+            </li>
+            <li>
               <Link href="/join" className="hover:text-ribbon">
                 Join
               </Link>
