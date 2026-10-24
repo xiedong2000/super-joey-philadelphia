@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { ContactIcon } from "@/components/ContactIcon";
 import { site } from "@/lib/content";
 
 export function SiteFooter() {
@@ -61,18 +62,21 @@ export function SiteFooter() {
           </p>
           <ul className="mt-3 space-y-2 text-sm text-navy/80">
             <li>
-              <a className="hover:text-ribbon" href={site.instagramUrl}>
-                Instagram {site.instagramHandle}
+              <a className="inline-flex items-center gap-2 hover:text-ribbon" href={site.instagramUrl}>
+                <ContactIcon name="instagram" className="h-4 w-4" />
+                <span>Instagram {site.instagramHandle}</span>
               </a>
             </li>
             <li>
-              <a className="hover:text-ribbon" href={site.youtubeUrl}>
-                {site.youtubeLabel}
+              <a className="inline-flex items-center gap-2 hover:text-ribbon" href={site.youtubeUrl}>
+                <ContactIcon name="youtube" className="h-4 w-4" />
+                <span>{site.youtubeLabel}</span>
               </a>
             </li>
             <li>
-              <a className="hover:text-ribbon" href={`mailto:${site.email}`}>
-                {site.email}
+              <a className="inline-flex items-center gap-2 hover:text-ribbon" href={`mailto:${site.email}`}>
+                <ContactIcon name="email" className="h-4 w-4" />
+                <span>{site.email}</span>
               </a>
             </li>
           </ul>
