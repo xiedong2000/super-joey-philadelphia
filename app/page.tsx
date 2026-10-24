@@ -154,8 +154,8 @@ export default function HomePage() {
       <section className="border-y border-line bg-card">
         <div className="mx-auto grid w-full max-w-6xl gap-8 px-5 py-20 md:grid-cols-12">
           <h2 className="font-serif text-[clamp(2.8rem,5vw,4.8rem)] leading-[0.92] tracking-[-0.04em] text-navy md:col-span-5">
-            One child.
-            <span className="mt-1 block italic text-ribbon">A city’s answer.</span>
+            One Child.
+            <span className="mt-1 block italic text-ribbon">A Legacy of Hope.</span>
           </h2>
           <div className="space-y-4 text-lg leading-8 md:col-span-7">
             {joeyStory.map((paragraph) => (
