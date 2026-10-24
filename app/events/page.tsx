@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { PageIntro } from "@/components/PageIntro";
-import { activities, pastEditions, upcoming, videos } from "@/lib/content";
+import { activities, upcoming, videos } from "@/lib/content";
 import { VideoGrid } from "@/components/VideoCard";
 
 export const metadata: Metadata = {
@@ -118,28 +118,6 @@ export default function EventsPage() {
           </div>
         </section>
 
-        <section className="mt-14">
-          <h2 className="font-serif text-3xl text-navy">Past activities</h2>
-          {pastEditions.length === 0 ? (
-            <p className="mt-4 max-w-2xl text-lg leading-8 text-muted">
-              Written recaps can be added beside these videos when the chapter
-              shares them.
-            </p>
-          ) : (
-            <ul className="mt-6 grid gap-4">
-              {pastEditions.map((edition) => (
-                <li
-                  key={`${edition.year}-${edition.activity}`}
-                  className="rounded-3xl border border-line bg-card p-6"
-                >
-                  <p className="text-sm font-semibold text-gold-deep">{edition.year}</p>
-                  <h3 className="mt-2 font-serif text-2xl text-navy">{edition.activity}</h3>
-                  <p className="mt-3 leading-7">{edition.summary}</p>
-                </li>
-              ))}
-            </ul>
-          )}
-        </section>
       </div>
     </>
   );
