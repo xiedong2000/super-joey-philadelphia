@@ -266,7 +266,7 @@ export default function HomePage() {
             <p className="text-xs font-bold uppercase tracking-[0.16em] text-ribbon">
               Foundation
             </p>
-            <p className="mt-3 font-serif text-2xl text-navy">
+            <p className="mt-3 font-serif text-base text-navy">
               <a href={site.phoneHref}>{site.phoneDisplay}</a>
             </p>
             <a className="mt-4 inline-block font-bold underline decoration-ribbon underline-offset-4" href={site.nationalUrl}>
