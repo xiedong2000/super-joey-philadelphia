@@ -29,10 +29,10 @@ export default function LeadershipPage() {
                   <img
                     src={leader.photo}
                     alt={leader.photoAlt ?? `${leader.name} portrait`}
-                    className="h-16 w-16 rounded-full object-cover ring-2 ring-navy/10"
+                    className="h-40 w-40 rounded-full object-cover ring-2 ring-navy/10 sm:h-52 sm:w-52"
                   />
                 ) : (
-                  <span className="flex h-16 w-16 items-center justify-center rounded-full bg-navy font-serif text-xl text-ribbon">
+                  <span className="flex h-40 w-40 items-center justify-center rounded-full bg-navy font-serif text-xl text-ribbon sm:h-52 sm:w-52">
                     <span className="sr-only">{leader.name}. </span>
                     {leader.initials}
                   </span>

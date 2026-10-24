@@ -37,6 +37,7 @@ export type Activity = {
   summary: string;
   story: string[];
   takePart: string;
+  photo: string;
 };
 
 export const activities: Activity[] = [
@@ -53,6 +54,7 @@ export const activities: Activity[] = [
     ],
     takePart:
       "Students who want a service shift can say so on the Join page. The chapter uses that list when the next Serve for Love is scheduled.",
+    photo: "/photo/ServeWithLove.png",
   },
   {
     slug: "charity-tennis-tournament",
@@ -67,6 +69,7 @@ export const activities: Activity[] = [
     ],
     takePart:
       "Players, day-of helpers, and people who want to sponsor the tournament can join the interest list.",
+    photo: "/photo/CharityTennisTournament.png",
   },
   {
     slug: "charity-concert",
@@ -81,6 +84,7 @@ export const activities: Activity[] = [
     ],
     takePart:
       "Musicians and volunteers who can help with the evening can note that on the Join page.",
+    photo: "/photo/CharityConcerts.png",
   },
   {
     slug: "july-4th-charity-sale",
@@ -95,6 +99,7 @@ export const activities: Activity[] = [
     ],
     takePart:
       "People who can staff the sale, donate items, or help spread the word can say so on the Join page.",
+    photo: "/photo/July4thCharitySale.png",
   },
   {
     slug: "fathers-day-team-building",
@@ -109,6 +114,7 @@ export const activities: Activity[] = [
     ],
     takePart:
       "Students and families who want to join the team day can add their names on the Join page.",
+    photo: "/photo/fathersDayPicnic.png",
   },
 ];
 
@@ -202,7 +208,7 @@ export const leaders: Leader[] = [
     school: "Lower Moreland High School",
     initials: "PX",
     bio: "Patrick Xie is co-president of Super Joey Foundation Philadelphia.",
-    photo: "/leadership/patrick-xie.svg",
+    photo: "/photo/PatrickXie.jpg",
     photoAlt: "Patrick Xie portrait",
   },
   {

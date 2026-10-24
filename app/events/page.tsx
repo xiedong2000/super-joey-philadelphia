@@ -47,24 +47,33 @@ export default function EventsPage() {
 
         <section className="mt-14">
           <h2 className="font-serif text-3xl text-navy">Yearly activities</h2>
-          <ul className="mt-6 grid gap-4">
+          <ul className="mt-6 grid gap-6">
             {activities.map((activity) => (
-              <li key={activity.slug} className="border border-line bg-card p-6 md:p-8">
-                <p className="text-sm font-semibold uppercase tracking-[0.16em] text-gold-deep">
-                  {activity.cadence} · Date to be announced
-                </p>
-                <h3 className="mt-3 font-serif text-3xl text-navy">{activity.title}</h3>
-                <p className="mt-3 max-w-2xl text-lg leading-8 text-muted">
-                  {activity.summary}
-                </p>
-                <p className="mt-3 text-sm font-semibold text-navy">{activity.invitation}</p>
-                <div className="mt-5 flex flex-col gap-3 sm:flex-row">
-                  <Link href={`/events/${activity.slug}`} className="font-semibold text-gold-deep">
-                    Read more
-                  </Link>
-                  <Link href="/join" className="font-semibold text-navy">
-                    Ask for a spot
-                  </Link>
+              <li key={activity.slug} className="overflow-hidden rounded-3xl border border-line bg-card shadow-[0_24px_50px_-36px_rgba(22,48,68,0.7)]">
+                <div className="flex min-h-[320px] items-center justify-center bg-[#edf3f8] p-3 md:min-h-[420px] md:p-5">
+                  <img
+                    src={activity.photo}
+                    alt={activity.title}
+                    className="h-full w-full object-contain"
+                  />
+                </div>
+                <div className="p-6 md:p-8">
+                  <p className="text-sm font-semibold uppercase tracking-[0.16em] text-gold-deep">
+                    {activity.cadence} · Date to be announced
+                  </p>
+                  <h3 className="mt-3 font-serif text-3xl text-navy md:text-4xl">{activity.title}</h3>
+                  <p className="mt-3 max-w-3xl text-lg leading-8 text-muted">
+                    {activity.summary}
+                  </p>
+                  <p className="mt-3 text-sm font-semibold text-navy">{activity.invitation}</p>
+                  <div className="mt-5 flex flex-col gap-3 sm:flex-row">
+                    <Link href={`/events/${activity.slug}`} className="font-semibold text-gold-deep">
+                      Read more
+                    </Link>
+                    <Link href="/join" className="font-semibold text-navy">
+                      Ask for a spot
+                    </Link>
+                  </div>
                 </div>
               </li>
             ))}
