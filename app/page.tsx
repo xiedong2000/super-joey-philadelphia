@@ -238,7 +238,9 @@ export default function HomePage() {
       <section className="mx-auto w-full max-w-6xl px-5 py-20">
         <h2 className="font-serif text-5xl tracking-[-0.04em] text-navy">Leadership</h2>
         <ul className="mt-8 grid gap-4 md:grid-cols-2">
-          {leaders.map((leader) => (
+          {leaders
+            .filter((leader) => leader.role === "Co-President")
+            .map((leader) => (
             <li key={leader.name} className="flex items-center gap-4 border border-navy bg-card p-6">
               {leader.photo ? (
                 <img
@@ -257,7 +259,7 @@ export default function HomePage() {
                 <p className="text-sm text-muted">{leader.school}</p>
               </div>
             </li>
-          ))}
+            ))}
         </ul>
         <Link href="/leadership" className="mt-6 inline-block font-bold underline decoration-ribbon underline-offset-4">
           Meet the leadership team
