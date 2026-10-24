@@ -45,10 +45,7 @@ export default function LeadershipPage() {
         <section className="mt-12 max-w-3xl">
           <h2 className="font-serif text-3xl text-navy">More of the team</h2>
           <p className="mt-4 text-lg leading-8 text-muted">
-            Other officers can be added when each person agrees to be listed
-            and the chapter sends a name, title, and optional photo. The
-            foundation’s own volunteer page remains the national listing of
-            chapter team leaders.
+            Other officers&apos; information will be added soon.
           </p>
           <p className="mt-4">
             <a

@@ -47,9 +47,6 @@ export function JoinForm() {
   return (
     <form
       className="rounded-3xl border border-line bg-card p-6 shadow-[0_20px_50px_-36px_rgba(22,48,68,0.7)] md:p-8"
-      action={`mailto:${site.email}`}
-      method="post"
-      encType="text/plain"
       onSubmit={onSubmit}
     >
       <div className="grid gap-5">
