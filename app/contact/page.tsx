@@ -95,9 +95,7 @@ export default function ContactPage() {
           <p className="mt-3 font-serif text-3xl text-navy [overflow-wrap:anywhere]">
             {site.phoneDisplay}
           </p>
-          <p className="mt-3 text-muted">
-            Published on superjoey.org as the foundation phone line.
-          </p>
+          <p className="mt-3 text-muted">Super Joey Foundation Phone Line.</p>
         </a>
         <a
           href={site.instagramUrl}

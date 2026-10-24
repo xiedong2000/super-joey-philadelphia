@@ -241,24 +241,24 @@ export default function HomePage() {
           {leaders
             .filter((leader) => leader.role === "Co-President")
             .map((leader) => (
-            <li key={leader.name} className="flex items-center gap-4 border border-navy bg-card p-6">
-              {leader.photo ? (
-                <img
-                  src={leader.photo}
-                  alt={leader.photoAlt ?? `${leader.name} portrait`}
-                  className="h-28 w-28 rounded-2xl border border-navy/10 bg-white object-contain p-1 sm:h-32 sm:w-32"
-                />
-              ) : (
-                <span className="flex h-20 w-20 items-center justify-center bg-sun font-serif text-xl text-navy">
-                  {leader.initials}
-                </span>
-              )}
-              <div>
-                <h3 className="font-serif text-3xl text-navy">{leader.name}</h3>
-                <p className="font-bold text-gold-deep">{leader.role}</p>
-                <p className="text-sm text-muted">{leader.school}</p>
-              </div>
-            </li>
+              <li key={leader.name} className="flex items-center gap-4 border border-navy bg-card p-6">
+                {leader.photo ? (
+                  <img
+                    src={leader.photo}
+                    alt={leader.photoAlt ?? `${leader.name} portrait`}
+                    className="h-28 w-28 rounded-2xl border border-navy/10 bg-white object-contain p-1 sm:h-32 sm:w-32"
+                  />
+                ) : (
+                  <span className="flex h-20 w-20 items-center justify-center bg-sun font-serif text-xl text-navy">
+                    {leader.initials}
+                  </span>
+                )}
+                <div>
+                  <h3 className="font-serif text-3xl text-navy">{leader.name}</h3>
+                  <p className="font-bold text-gold-deep">{leader.role}</p>
+                  <p className="text-sm text-muted">{leader.school}</p>
+                </div>
+              </li>
             ))}
         </ul>
         <Link href="/leadership" className="mt-6 inline-block font-bold underline decoration-ribbon underline-offset-4">
