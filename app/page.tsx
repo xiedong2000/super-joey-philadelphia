@@ -27,6 +27,18 @@ const ticker = [
 
 export default function HomePage() {
   const loop = [...ticker, ...ticker];
+  const sortedVideos = [...videos].sort((a, b) => {
+    const getYear = (value: string) => (value ? Number(value) : -1);
+    return getYear(b.year) - getYear(a.year);
+  });
+  const featuredVideos = [
+    videos.find(
+      (video) => video.title === "2026 The 6th Annual Super Joey Charity Tennis Tournament",
+    ),
+    videos.find(
+      (video) => video.title === "2022 Super Joey Foundation Meal of Love at McDonald House",
+    ),
+  ].filter((video): video is (typeof videos)[number] => Boolean(video));
 
   return (
     <>
@@ -192,12 +204,7 @@ export default function HomePage() {
           </Link>
         </div>
         <div className="mt-8">
-          <VideoGrid
-            videos={[
-              ...videos.filter((video) => video.year === "2026"),
-              ...videos.filter((video) => video.year !== "2026").slice(0, 1),
-            ]}
-          />
+          <VideoGrid videos={featuredVideos} />
         </div>
       </section>
 

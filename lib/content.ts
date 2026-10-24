@@ -160,16 +160,30 @@ export const videos: ChapterVideo[] = [
     short: false,
   },
   {
+    id: "rzoSE_ys0D4",
+    title: "2025 Super Joey Father's Day Picnic",
+    year: "2025",
+    activity: "fathers-day-team-building",
+    short: true,
+  },
+  {
     id: "7XkiFFhk6lc",
-    title: "2026 The 6th Annual Super Joey Philadelphia Charity Video",
+    title: "2026 The 6th Annual Super Joey Charity Tennis Tournament",
     year: "2026",
     activity: "charity-tennis-tournament",
     short: true,
   },
   {
     id: "iVo_yG9zW1Q",
-    title: "6th Annual Spring Charity",
+    title: "2026 The 6th Annual Spring Charity Concert",
     year: "",
+    short: true,
+  },
+  {
+    id: "ROL7AXYwCWw",
+    title: "2024 Super Joey Spring Charity Concert",
+    year: "2024",
+    activity: "charity-concert",
     short: true,
   },
   {
@@ -180,9 +194,9 @@ export const videos: ChapterVideo[] = [
   },
   {
     id: "AnlRqzmbj_Q",
-    title: "2022 Super Joey Foundation Tennis Tournament",
-    year: "2022",
-    activity: "charity-tennis-tournament",
+    title: "2020 Super Joey Summer Charity Virtual Concert",
+    year: "2020",
+    activity: "charity-concert",
     short: false,
   },
 ];

@@ -11,6 +11,13 @@ export const metadata: Metadata = {
 };
 
 export default function EventsPage() {
+  const sortedVideos = [...videos].sort((a, b) => {
+    const getYear = (value: string) => (value ? Number(value) : -1);
+    return getYear(b.year) - getYear(a.year);
+  });
+  const fullWidthVideos = sortedVideos.filter((video) => !video.short);
+  const shortVideos = sortedVideos.filter((video) => video.short);
+
   return (
     <>
       <PageIntro kicker="Activities" title="Five ways the Philadelphia chapter shows up.">
@@ -101,8 +108,13 @@ export default function EventsPage() {
             Tournaments, a spring charity, and Meal of Love, from the chapter
             YouTube channel.
           </p>
-          <div className="mt-8">
-            <VideoGrid videos={videos} />
+          <div className="mt-8 space-y-12">
+            <div>
+              <VideoGrid videos={shortVideos} />
+            </div>
+            <div>
+              <VideoGrid videos={fullWidthVideos} />
+            </div>
           </div>
         </section>
 
