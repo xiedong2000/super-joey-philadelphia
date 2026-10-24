@@ -37,7 +37,7 @@ export default function HomePage() {
       (video) => video.title === "2026 The 6th Annual Super Joey Charity Tennis Tournament",
     ),
     videos.find(
-      (video) => video.title === "2022 Super Joey Foundation Meal of Love at McDonald House",
+      (video) => video.title === "2022 Meal of Love",
     ),
   ].filter((video): video is (typeof videos)[number] => Boolean(video));
 
