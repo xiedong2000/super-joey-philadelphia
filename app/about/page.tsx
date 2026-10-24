@@ -46,9 +46,9 @@ export default function AboutPage() {
               </a>
             </p>
           </div>
-          <aside className="rounded-3xl bg-navy p-6 text-paper md:col-span-5">
-            <h2 className="font-serif text-3xl">In Philadelphia</h2>
-            <ul className="mt-4 space-y-3 text-paper/85">
+          <aside className="rounded-3xl border border-[#bfdff3]/70 bg-[#eaf6ff] p-6 text-navy md:col-span-5">
+            <h2 className="font-serif text-3xl text-navy">In Philadelphia</h2>
+            <ul className="mt-4 space-y-3 text-navy/80">
               <li>Serve with Love</li>
               <li>Charity Tennis Tournament</li>
               <li>Charity Concert</li>
@@ -97,6 +97,16 @@ export default function AboutPage() {
               Foundation volunteer page
             </a>
           </p>
+
+          <div className="mt-8 rounded-3xl border border-[#bfdff3]/70 bg-[#eaf6ff] p-6 shadow-[0_18px_32px_-24px_rgba(22,48,68,0.35)]">
+            <h3 className="font-serif text-2xl text-navy">Community Support and Acknowledgment</h3>
+            <ul className="mt-4 space-y-3 text-lg leading-8 text-navy/80">
+              <li>Delaware Valley Tennis Club</li>
+              <li>Peace Valley Chinese Christian Church</li>
+              <li>Matsu Sushi and Ramen Inc.</li>
+              <li>Longlong Zhan Real Estate Investment LLC.</li>
+            </ul>
+          </div>
         </section>
       </article>
     </>

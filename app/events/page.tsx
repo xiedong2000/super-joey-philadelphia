@@ -87,9 +87,9 @@ export default function EventsPage() {
           </ul>
         </section>
 
-        <section className="mt-14 border border-line bg-navy p-6 text-paper md:p-8">
-          <h2 className="font-serif text-3xl">Can’t make a date?</h2>
-          <p className="mt-3 max-w-2xl leading-7 text-paper/80">
+        <section className="mt-14 rounded-3xl border border-[#bfdff3]/70 bg-[#eaf6ff] p-6 text-navy md:p-8">
+          <h2 className="font-serif text-3xl text-navy">Can’t make a date?</h2>
+          <p className="mt-3 max-w-2xl leading-7 text-navy/80">
             Schools, families, and local businesses can still help: host a
             drive, sponsor a tournament or concert, or send a group of
             volunteers. Tell the chapter what you can offer.
