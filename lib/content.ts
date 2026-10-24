@@ -242,15 +242,6 @@ export const leaders: Leader[] = [
     photoAlt: "Richard Wan portrait",
   },
   {
-    name: "Olivia Tan",
-    role: "Vice President",
-    school: "",
-    initials: "OT",
-    bio: "Olivia Tan serves as vice president for the Philadelphia chapter.",
-    photo: "/leadership/richard-wan.svg",
-    photoAlt: "Olivia Tan placeholder portrait",
-  },
-  {
     name: "Ellen Zhou",
     role: "Vice President",
     school: "",
@@ -258,6 +249,15 @@ export const leaders: Leader[] = [
     bio: "Ellen Zhou serves as vice president for the Philadelphia chapter.",
     photo: "/leadership/richard-wan.svg",
     photoAlt: "Ellen Zhou placeholder portrait",
+  },
+  {
+    name: "Olivia Tan",
+    role: "Vice President",
+    school: "",
+    initials: "OT",
+    bio: "Olivia Tan serves as vice president for the Philadelphia chapter.",
+    photo: "/leadership/richard-wan.svg",
+    photoAlt: "Olivia Tan placeholder portrait",
   },
   {
     name: "Henry Yang",
