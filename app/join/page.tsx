@@ -16,7 +16,7 @@ export default function JoinPage() {
         <p>
           Students, musicians, tennis players, and school groups are welcome.
           Send your name and the kind of help you can offer. The note goes to
-          the foundation’s youth address, {site.email}.
+          the chapter at {site.email}.
         </p>
       </PageIntro>
 
@@ -27,6 +27,8 @@ export default function JoinPage() {
             <li>Serve at the next Serve for Love</li>
             <li>Play, staff, or sponsor the tennis tournament</li>
             <li>Perform or help produce the charity concert</li>
+            <li>Help with the July 4th Charity Sale</li>
+            <li>Join Father’s Day Team Building</li>
             <li>Start interest at your school</li>
           </ul>
           <p className="mt-6 text-muted">

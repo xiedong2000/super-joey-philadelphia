@@ -7,17 +7,18 @@ import { VideoGrid } from "@/components/VideoCard";
 export const metadata: Metadata = {
   title: "Activities",
   description:
-    "Yearly Super Joey Foundation Philadelphia activities: Serve for Love, the Charity Tennis Tournament, and the Charity Concert.",
+    "Yearly Super Joey Foundation Philadelphia activities, including Serve for Love, tennis, a concert, the July 4th Charity Sale, and Father’s Day Team Building.",
 };
 
 export default function EventsPage() {
   return (
     <>
-      <PageIntro kicker="Activities" title="A Philadelphia year of service, sport, and music.">
+      <PageIntro kicker="Activities" title="Five ways the Philadelphia chapter shows up.">
         <p>
-          The chapter’s public calendar is Serve for Love, the Charity Tennis
-          Tournament, and the Charity Concert. Confirmed dates appear first.
-          Past videos from the chapter are below.
+          The yearly calendar is Serve for Love, the Charity Tennis Tournament,
+          the Charity Concert, the July 4th Charity Sale, and Father’s Day Team
+          Building. Confirmed dates appear first. Past videos from the chapter
+          are below.
         </p>
       </PageIntro>
 
@@ -26,10 +27,9 @@ export default function EventsPage() {
           <h2 className="font-serif text-3xl text-navy">Upcoming</h2>
           {upcoming.length === 0 ? (
             <p className="mt-4 max-w-2xl text-lg leading-8 text-muted">
-              No upcoming date is posted yet. When Serve for Love, the tennis
-              tournament, or the concert has a place and a day, it will be
-              listed here. Until then, the Join page is the way to hear about
-              volunteer spots.
+              No upcoming date is posted yet. When an activity has a place and a
+              day, it will be listed here. Until then, the Join page is the way
+              to hear about volunteer spots.
             </p>
           ) : (
             <ul className="mt-6 grid gap-4 md:grid-cols-3">

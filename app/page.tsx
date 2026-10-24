@@ -21,6 +21,8 @@ const ticker = [
   "Serve for Love",
   "Charity tennis",
   "Charity concert",
+  "July 4th sale",
+  "Father’s Day team day",
 ];
 
 export default function HomePage() {
@@ -42,7 +44,8 @@ export default function HomePage() {
             </h1>
             <p className="mt-8 max-w-xl text-lg leading-8 text-navy/80">
               Student volunteers in Philadelphia show up for children and
-              families facing cancer, through service, tennis, and music.
+              families facing cancer, through service, sport, music, and
+              community days.
             </p>
             <div className="mt-8 flex flex-wrap items-center gap-6">
               <Link
@@ -244,8 +247,7 @@ export default function HomePage() {
             <p className="text-xs font-bold uppercase tracking-[0.16em] text-sun">
               Foundation
             </p>
-            <p className="mt-3 font-serif text-4xl">{site.email}</p>
-            <p className="mt-2">
+            <p className="mt-3 font-serif text-4xl">
               <a href={site.phoneHref}>{site.phoneDisplay}</a>
             </p>
             <a className="mt-4 inline-block font-bold underline decoration-sun underline-offset-4" href={site.nationalUrl}>
@@ -256,7 +258,10 @@ export default function HomePage() {
             <p className="text-xs font-bold uppercase tracking-[0.16em] text-sun">
               Philadelphia
             </p>
-            <p className="mt-3 font-serif text-4xl">Follow the chapter</p>
+            <p className="mt-3 font-serif text-3xl [overflow-wrap:anywhere] sm:text-4xl">
+              <a href={`mailto:${site.email}`}>{site.email}</a>
+            </p>
+            <p className="mt-4 font-serif text-3xl">Follow the chapter</p>
             <p className="mt-3">
               <a className="font-bold underline decoration-sun underline-offset-4" href={site.instagramUrl}>
                 Instagram {site.instagramHandle}

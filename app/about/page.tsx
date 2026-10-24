@@ -49,10 +49,11 @@ export default function AboutPage() {
           <aside className="rounded-3xl bg-navy p-6 text-paper md:col-span-5">
             <h2 className="font-serif text-3xl">In Philadelphia</h2>
             <ul className="mt-4 space-y-3 text-paper/85">
-              <li>Serve for Love, a yearly service activity</li>
-              <li>A yearly charity tennis tournament</li>
-              <li>A yearly charity concert</li>
-              <li>A welcome for new student volunteers</li>
+              <li>Serve for Love</li>
+              <li>Charity Tennis Tournament</li>
+              <li>Charity Concert</li>
+              <li>July 4th Charity Sale</li>
+              <li>Father’s Day Team Building</li>
             </ul>
             <Link
               href="/events"

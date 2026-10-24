@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     template: "%s · Super Joey Foundation Philadelphia",
   },
   description:
-    "Philadelphia chapter of the Super Joey Foundation. Yearly service, a charity tennis tournament, and a charity concert supporting families affected by childhood cancer.",
+    "Philadelphia chapter of the Super Joey Foundation. Service, tennis, a concert, a July 4th charity sale, and Father’s Day team building for families affected by childhood cancer.",
 };
 
 export default function RootLayout({

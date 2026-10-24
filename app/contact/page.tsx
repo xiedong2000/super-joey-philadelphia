@@ -31,8 +31,7 @@ export default function ContactPage() {
             {site.email}
           </p>
           <p className="mt-3 text-muted">
-            Youth volunteer contact for the Super Joey Foundation, including
-            the Philadelphia chapter.
+            Email for Super Joey Foundation Philadelphia.
           </p>
         </a>
         <a

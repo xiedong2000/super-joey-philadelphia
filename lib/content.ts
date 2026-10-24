@@ -6,7 +6,7 @@
 
 export const site = {
   name: "Super Joey Foundation Philadelphia",
-  email: "youth@superjoey.org",
+  email: "sjfoundationphiladelphia@gmail.com",
   phoneDisplay: "(888) 4000-2424",
   phoneHref: "tel:88840002424",
   nationalUrl: "https://www.superjoey.org/",
@@ -81,6 +81,34 @@ export const activities: Activity[] = [
     ],
     takePart:
       "Musicians and volunteers who can help with the evening can note that on the Join page.",
+  },
+  {
+    slug: "july-4th-charity-sale",
+    title: "July 4th Charity Sale",
+    cadence: "Yearly",
+    invitation: "Help the sale or donate an item",
+    summary:
+      "A yearly charity sale held around July 4th, with proceeds supporting the chapter’s work.",
+    story: [
+      "The July 4th Charity Sale is one of the Philadelphia chapter’s yearly activities. Volunteers help with the sale, and neighbors can donate items or come shop.",
+      "The meeting place and the list of what to bring are posted when the chapter sets them for that year.",
+    ],
+    takePart:
+      "People who can staff the sale, donate items, or help spread the word can say so on the Join page.",
+  },
+  {
+    slug: "fathers-day-team-building",
+    title: "Father’s Day Team Building",
+    cadence: "Yearly",
+    invitation: "Join the team day",
+    summary:
+      "A yearly team-building gathering around Father’s Day for chapter volunteers and families.",
+    story: [
+      "Father’s Day Team Building brings the Philadelphia volunteers together around Father’s Day. It is a day for the team to meet, work side by side, and get ready for the rest of the year’s activities.",
+      "The place and schedule are announced before each gathering. They are not posted here until the chapter confirms them.",
+    ],
+    takePart:
+      "Students and families who want to join the team day can add their names on the Join page.",
   },
 ];
 
@@ -185,14 +213,14 @@ export const leaders: Leader[] = [
 export const joeyStory = [
   "Super Joey Foundation was inspired by Joey, a courageous four-year-old known as Super Joey at Children’s Hospital Los Angeles.",
   "He was born in Ventura County, California, on Thanksgiving Day in 2011. In May 2013 he was diagnosed with Stage III Wilms tumor. He loved superheroes, and through treatment he stayed strong, smiled, and encouraged other patients.",
-  "Joey died in February 2016. His life was short and full of joy. The foundation carries his love and courage on for children and families still facing cancer. In Philadelphia, students do that by serving, playing, and making music.",
+  "Joey died in February 2016. His life was short and full of joy. The foundation carries his love and courage on for children and families still facing cancer. In Philadelphia, students do that through service, sport, music, a July 4th sale, and a Father’s Day team day.",
 ];
 
 export const waysToHelp = [
   {
     href: "/events",
     title: "Join an activity",
-    text: "Serve for Love, the charity tennis tournament, and the charity concert are the chapter’s public days. Come when a date is set.",
+    text: "The chapter’s public days include Serve for Love, tennis, a concert, the July 4th sale, and Father’s Day team building. Come when a date is set.",
   },
   {
     href: "/join",
@@ -228,6 +256,8 @@ export const joinInterests = [
   "Serve for Love",
   "Charity Tennis Tournament",
   "Charity Concert",
+  "July 4th Charity Sale",
+  "Father’s Day Team Building",
   "General volunteer",
   "School club or partnership",
 ] as const;

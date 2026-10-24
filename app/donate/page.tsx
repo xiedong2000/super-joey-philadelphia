@@ -13,9 +13,9 @@ export default function DonatePage() {
     <>
       <PageIntro kicker="Donate" title="Support the chapter’s work.">
         <p>
-          Gifts help the Philadelphia chapter carry out Serve for Love, the
-          charity tennis tournament, the charity concert, and the Super Joey
-          Foundation’s mission to support families affected by childhood cancer.
+          Gifts help the Philadelphia chapter carry out its five yearly
+          activities and the Super Joey Foundation’s mission to support
+          families affected by childhood cancer.
         </p>
       </PageIntro>
 
