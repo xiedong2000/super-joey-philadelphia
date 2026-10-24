@@ -12,13 +12,7 @@ export const metadata: Metadata = {
 export default function LeadershipPage() {
   return (
     <>
-      <PageIntro kicker="Leadership" title="The officers guiding Philadelphia.">
-        <p>
-          This page names people who have a public role with the chapter. It
-          lists a role, a school, and a short note. Personal phone numbers and
-          home addresses stay off the site.
-        </p>
-      </PageIntro>
+      <PageIntro kicker="Leadership" title="The officers guiding Philadelphia." />
 
       <div className="mx-auto w-full max-w-6xl px-5 py-14">
         <ul className="grid gap-6 md:grid-cols-2">
