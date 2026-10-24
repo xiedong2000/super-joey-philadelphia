@@ -93,6 +93,15 @@ export default function DonatePage() {
               <br />
               <span className="font-semibold">Add note:</span> To Philly Branch
             </p>
+            <p className="mt-4 leading-7">
+              <span className="font-semibold">PayPal:</span>{" "}
+              <a
+                className="underline"
+                href="mailto:sjf.philadelphia.donation@gmail.com"
+              >
+                sjf.philadelphia.donation@gmail.com
+              </a>
+            </p>
             {hasDonationLink() ? (
               <a
                 href={site.donationUrl}
