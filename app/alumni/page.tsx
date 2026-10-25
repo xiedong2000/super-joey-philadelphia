@@ -39,7 +39,7 @@ const alumniPhotos = [
   {
     src: "/photo/alumni01.JPG",
     alt: "Philadelphia chapter students gathered outdoors",
-    caption: "Philadelphia chapter students at an outdoor gathering in September 2021.",
+    caption: "Assemble sanitary kits for Ronald Mcdonald House, August 2021",
   },
   {
     src: "/photo/alumni03.JPG",
@@ -49,12 +49,22 @@ const alumniPhotos = [
   {
     src: "/photo/alumni02.JPG",
     alt: "Philadelphia chapter students holding a Super Joey Foundation banner",
-    caption: "Chapter students sharing the Super Joey Foundation message in June 2022.",
+    caption: "Make a donation to Ronald Mcdonald House in June 2022",
+  },
+  {
+    src: "/photo/alumni05.jpg",
+    alt: "Super Joey Foundation volunteers at Serve with Love",
+    caption: "Serve with Love on September 14, 2022.",
+  },
+  {
+    src: "/photo/alumni06.jpg",
+    alt: "Philadelphia chapter members at a July 4th community sale",
+    caption: "2024 July 4th Sale",
   },
   {
     src: "/photo/alumni04.jpg",
     alt: "Philadelphia chapter members gathered at Delaware Valley Tennis Club",
-    caption: "Philadelphia chapter members gathered at Delaware Valley Tennis Club in September 2023.",
+    caption: "3th Charity Tennis Tournament at Delaware Valley Tennis Club in September 2023.",
   },
 ];
 
