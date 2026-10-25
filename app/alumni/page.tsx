@@ -39,12 +39,7 @@ const alumniPhotos = [
   {
     src: "/photo/alumni01.JPG",
     alt: "Philadelphia chapter students gathered outdoors",
-    caption: "Philadelphia chapter students at an outdoor gathering.",
-  },
-  {
-    src: "/photo/alumni02.JPG",
-    alt: "Philadelphia chapter students holding a Super Joey Foundation banner",
-    caption: "Chapter students sharing the Super Joey Foundation message.",
+    caption: "Philadelphia chapter students at an outdoor gathering in September 2021.",
   },
   {
     src: "/photo/alumni03.JPG",
@@ -52,9 +47,14 @@ const alumniPhotos = [
     caption: "Super Joey Foundation members at the Winter Concert in 2021.",
   },
   {
+    src: "/photo/alumni02.JPG",
+    alt: "Philadelphia chapter students holding a Super Joey Foundation banner",
+    caption: "Chapter students sharing the Super Joey Foundation message in June 2022.",
+  },
+  {
     src: "/photo/alumni04.jpg",
     alt: "Philadelphia chapter members gathered at Delaware Valley Tennis Club",
-    caption: "Philadelphia chapter members gathered at Delaware Valley Tennis Club.",
+    caption: "Philadelphia chapter members gathered at Delaware Valley Tennis Club in September 2023.",
   },
 ];
 
