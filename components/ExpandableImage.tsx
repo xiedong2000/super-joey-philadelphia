@@ -5,6 +5,7 @@ import { useEffect, useRef, useState } from "react";
 type ExpandableImageProps = {
   src: string;
   alt: string;
+  title?: string;
   imageClassName?: string;
   buttonClassName?: string;
 };
@@ -12,6 +13,7 @@ type ExpandableImageProps = {
 export function ExpandableImage({
   src,
   alt,
+  title = alt,
   imageClassName = "h-auto w-full",
   buttonClassName = "block w-full cursor-zoom-in rounded-2xl focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-ribbon",
 }: ExpandableImageProps) {
@@ -46,7 +48,7 @@ export function ExpandableImage({
         }}
       >
         <div className="mb-4 flex items-center justify-between gap-4">
-          <p className="text-sm leading-6 text-white/85">{alt}</p>
+          <p className="text-sm leading-6 text-white/85">{title}</p>
           <button
             type="button"
             autoFocus

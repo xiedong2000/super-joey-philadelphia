@@ -72,6 +72,7 @@ export default function AboutPage() {
             <ExpandableImage
               src="/photo/SuperJoey-serverforlove.jpg"
               alt="Volunteers serving families at a community meal"
+              title="Serve with Love at Ronald McDonald House"
               imageClassName="h-full w-full object-cover"
             />
           </figure>

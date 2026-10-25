@@ -20,6 +20,7 @@ export function AlumniPhotoGallery({ photos }: { photos: AlumniPhoto[] }) {
             <ExpandableImage
               src={photo.src}
               alt={photo.alt}
+              title={photo.caption}
               imageClassName="h-auto w-full rounded-2xl"
             />
             <figcaption className="mt-3 text-sm leading-6 text-muted">
