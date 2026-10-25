@@ -106,8 +106,17 @@ export default function EventsPage() {
         <section id="videos" className="mt-14">
           <h2 className="font-serif text-3xl text-navy">Watch</h2>
           <p className="mt-3 max-w-2xl text-lg leading-8 text-muted">
-            Tournaments, a spring charity, and Meal of Love, from the chapter
-            YouTube channel.
+            Serve with Love, Charity Tennis Tournament, Charity Concert, July
+            4th Charity Sale, and Father’s Day Team Building, from{" "}
+            <a
+              className="underline decoration-ribbon underline-offset-4"
+              href="https://www.youtube.com/@superjoeyfoundationphilade1967"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              the chapter YouTube
+            </a>
+            .
           </p>
           <div className="mt-8 space-y-12">
             <div>
