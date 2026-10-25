@@ -11,9 +11,16 @@ import {
   waysToHelp,
 } from "@/lib/content";
 import { VideoGrid } from "@/components/VideoCard";
-import { SiteIcon } from "@/components/SiteIcon";
+import { SiteIcon, type SiteIconName } from "@/components/SiteIcon";
 
 const cardTones = ["bg-sun", "bg-coral", "bg-sky"];
+const activityIcons: Partial<Record<string, SiteIconName>> = {
+  "serve-for-love": "serve",
+  "charity-tennis-tournament": "tennis",
+  "charity-concert": "concert",
+  "july-4th-charity-sale": "sale",
+  "fathers-day-team-building": "team",
+} as const;
 
 export default function HomePage() {
   const sortedVideos = [...videos].sort((a, b) => {
@@ -196,7 +203,13 @@ export default function HomePage() {
                 <p className="text-xs font-bold uppercase tracking-[0.14em] text-gold-deep">
                   {upcoming.length === 0 ? "Date to be announced" : activity.cadence}
                 </p>
-                <h3 className="mt-3 font-serif text-3xl text-navy">{activity.title}</h3>
+                <h3 className="mt-3 flex items-center gap-3 font-serif text-3xl text-navy">
+                  <SiteIcon
+                    name={activityIcons[activity.slug] ?? "activities"}
+                    className="h-6 w-6"
+                  />
+                  {activity.title}
+                </h3>
                 <p className="mt-2 text-navy/75">{activity.invitation}</p>
                 <Link href={`/events/${activity.slug}`} className="mt-5 inline-block font-bold">
                   Read more

@@ -12,7 +12,12 @@ export type SiteIconName =
   | "alumni"
   | "join"
   | "donate"
-  | "contact";
+  | "contact"
+  | "serve"
+  | "tennis"
+  | "concert"
+  | "sale"
+  | "team";
 
 export function SiteIcon({
   name,
@@ -87,6 +92,38 @@ export function SiteIcon({
       <>
         <path d="M20 11.5a7.5 7.5 0 0 1-7.5 7.5H5l-2 2v-6A7.5 7.5 0 1 1 20 11.5Z" />
         <path d="M8 11h.01M12 11h.01M16 11h.01" />
+      </>
+    ),
+    serve: (
+      <>
+        <path d="M12 20s-7-4.2-7-9.2A3.8 3.8 0 0 1 12 8a3.8 3.8 0 0 1 7 2.8c0 5-7 9.2-7 9.2Z" />
+        <path d="M3 14h3l2 2h3M21 14h-3l-2 2h-3" />
+      </>
+    ),
+    tennis: (
+      <>
+        <ellipse cx="9" cy="8" rx="5" ry="7" transform="rotate(35 9 8)" />
+        <path d="m12 12 7 8M6 3l6 9M17 6a2 2 0 1 0 0 4 2 2 0 0 0 0-4Z" />
+      </>
+    ),
+    concert: (
+      <>
+        <path d="M14 17V5l7-2v12" />
+        <circle cx="11" cy="17" r="3" />
+        <circle cx="18" cy="15" r="3" />
+      </>
+    ),
+    sale: (
+      <>
+        <path d="M5 8h14l-1 13H6L5 8Z" />
+        <path d="M9 9V6a3 3 0 0 1 6 0v3M9 14h6" />
+      </>
+    ),
+    team: (
+      <>
+        <circle cx="9" cy="8" r="3" />
+        <circle cx="17" cy="9" r="2.5" />
+        <path d="M3 20v-1a6 6 0 0 1 12 0v1M16 15a5 5 0 0 1 5 5" />
       </>
     ),
   };
