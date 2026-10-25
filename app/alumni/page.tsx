@@ -57,6 +57,11 @@ const alumniPhotos = [
     caption: "Serve with Love at Ronald McDonald House in September 2022.",
   },
   {
+    src: "/photo/alumni07.JPG",
+    alt: "Super Joey Foundation volunteers at Serve with Love",
+    caption: "Serve with Love at Ronald McDonald House in June 2023.",
+  },
+  {
     src: "/photo/alumni04.jpg",
     alt: "Philadelphia chapter members gathered at Delaware Valley Tennis Club",
     caption: "Charity Tennis Tournament at Delaware Valley Tennis Club in September 2023.",
