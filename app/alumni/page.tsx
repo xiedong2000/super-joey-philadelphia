@@ -76,7 +76,13 @@ const alumniPhotos = [
 export default function AlumniPage() {
   return (
     <>
-      <PageIntro icon="alumni" kicker="Alumni" title="Celebrating our alumni.">
+      <PageIntro
+        icon="alumni"
+        kicker="Alumni"
+        title="Celebrating our alumni."
+        className="border-t-4 border-t-[#f4bd32]"
+        titleClassName="text-[#176b67]"
+      >
         <p>
           We are proud of the students who have been part of the Philadelphia
           chapter. Meet our alumni by graduation year.
@@ -85,7 +91,7 @@ export default function AlumniPage() {
 
       <div className="mx-auto w-full max-w-6xl px-5 py-14">
         <section aria-labelledby="alumni-by-year">
-          <h2 id="alumni-by-year" className="font-serif text-3xl text-navy">
+          <h2 id="alumni-by-year" className="font-serif text-3xl text-[#176b67]">
             Alumni by graduation year
           </h2>
           <div className="mt-6 grid gap-6 md:grid-cols-2">
@@ -93,9 +99,9 @@ export default function AlumniPage() {
               <section
                 key={year}
                 aria-labelledby={`class-${year}`}
-                className="rounded-3xl border border-line bg-card p-7"
+                className="rounded-3xl border border-[#e9d59b] border-t-4 border-t-[#f4bd32] bg-[#fff8e8] p-7"
               >
-                <h3 id={`class-${year}`} className="font-serif text-2xl text-navy">
+                <h3 id={`class-${year}`} className="font-serif text-2xl text-[#176b67]">
                   Class of {year}
                 </h3>
                 <ul className="mt-4 space-y-2 text-lg leading-8">
@@ -109,14 +115,14 @@ export default function AlumniPage() {
         </section>
 
         <section className="mt-14" aria-labelledby="alumni-gallery">
-          <h2 id="alumni-gallery" className="font-serif text-3xl text-navy">
+          <h2 id="alumni-gallery" className="font-serif text-3xl text-[#176b67]">
             Alumni memories
           </h2>
           <AlumniPhotoGallery photos={alumniPhotos} />
         </section>
 
-        <figure className="mt-14 overflow-hidden rounded-3xl border border-line bg-card p-4 shadow-[0_24px_50px_-36px_rgba(22,48,68,0.7)] md:p-6">
-          <h2 className="font-serif text-3xl text-navy">Our graduates’ colleges</h2>
+        <figure className="mt-14 overflow-hidden rounded-3xl border border-[#e9d59b] bg-[#fff8e8] p-4 shadow-[0_24px_50px_-36px_rgba(22,48,68,0.7)] md:p-6">
+          <h2 className="font-serif text-3xl text-[#176b67]">Our graduates’ colleges</h2>
           <ExpandableImage
             src="/photo/alumni-college-map.png"
             alt="Map of colleges attended by Super Joey graduates across the United States"

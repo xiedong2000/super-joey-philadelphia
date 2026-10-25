@@ -15,7 +15,7 @@ export function AlumniPhotoGallery({ photos }: { photos: AlumniPhoto[] }) {
         {photos.map((photo) => (
           <figure
             key={photo.src}
-            className="overflow-hidden rounded-3xl border border-line bg-card p-4 shadow-[0_24px_50px_-36px_rgba(22,48,68,0.7)]"
+            className="overflow-hidden rounded-3xl border border-[#e9d59b] bg-[#fff8e8] p-4 shadow-[0_24px_50px_-36px_rgba(22,48,68,0.7)]"
           >
             <ExpandableImage
               src={photo.src}
