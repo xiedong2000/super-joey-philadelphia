@@ -43,7 +43,7 @@ export default function LeadershipPage() {
                   {leader.school}
                 </p>
               ) : null}
-              <p className="mt-3 text-lg leading-8">{leader.bio}</p>
+              {leader.bio ? <p className="mt-3 text-lg leading-8">{leader.bio}</p> : null}
             </li>
           ))}
         </ul>
