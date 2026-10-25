@@ -67,6 +67,13 @@ export default function AboutPage() {
 
         <section className="mt-14 max-w-3xl border-t border-line pt-10">
           <h2 className="font-serif text-3xl text-navy">Joey</h2>
+          <figure className="mt-6 aspect-[4/3] overflow-hidden rounded-3xl border border-line bg-white shadow-[0_24px_50px_-36px_rgba(22,48,68,0.7)]">
+            <img
+              src="/photo/SuperJoey-serverforlove.jpg"
+              alt="Volunteers serving families at a community meal"
+              className="h-full w-full object-cover"
+            />
+          </figure>
           <div className="mt-4 space-y-4 text-lg leading-8">
             {joeyStory.map((paragraph) => (
               <p key={paragraph}>{paragraph}</p>
