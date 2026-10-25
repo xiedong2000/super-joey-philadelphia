@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { CommunitySupportAcknowledgment } from "@/components/CommunitySupportAcknowledgment";
 import { PageIntro } from "@/components/PageIntro";
 import { hasDonationLink, site } from "@/lib/content";
 
@@ -120,6 +121,8 @@ export default function DonatePage() {
             ) : null}
           </aside>
         </div>
+
+        <CommunitySupportAcknowledgment />
       </div>
     </>
   );

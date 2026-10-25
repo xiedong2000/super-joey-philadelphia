@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { CommunitySupportAcknowledgment } from "@/components/CommunitySupportAcknowledgment";
 import { PageIntro } from "@/components/PageIntro";
 import { joeyStory, site } from "@/lib/content";
 
@@ -98,15 +99,7 @@ export default function AboutPage() {
             </a>
           </p>
 
-          <div className="mt-8 rounded-3xl border border-[#bfdff3]/70 bg-[#eaf6ff] p-6 shadow-[0_18px_32px_-24px_rgba(22,48,68,0.35)]">
-            <h3 className="font-serif text-2xl text-navy">Community Support and Acknowledgment</h3>
-            <ul className="mt-4 space-y-3 text-lg leading-8 text-navy/80">
-              <li>Delaware Valley Tennis Club</li>
-              <li>Peace Valley Chinese Christian Church</li>
-              <li>Matsu Sushi and Ramen Inc.</li>
-              <li>Longlong Zhan Real Estate Investment LLC.</li>
-            </ul>
-          </div>
+          <CommunitySupportAcknowledgment />
         </section>
       </article>
     </>
