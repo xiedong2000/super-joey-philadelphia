@@ -12,6 +12,7 @@ import {
 } from "@/lib/content";
 import { VideoGrid } from "@/components/VideoCard";
 import { SiteIcon, type SiteIconName } from "@/components/SiteIcon";
+import { ExpandableImage } from "@/components/ExpandableImage";
 
 const cardTones = ["bg-sun", "bg-coral", "bg-sky"];
 const activityIcons: Partial<Record<string, SiteIconName>> = {
@@ -69,10 +70,11 @@ export default function HomePage() {
 
           <div className="relative grid min-h-[300px] place-items-center md:min-h-[360px]">
             <figure className="relative z-10 flex w-[min(72vw,430px)] rotate-2 items-center justify-center overflow-hidden rounded-full border border-navy/20 bg-card p-4 shadow-[12px_16px_0_#171a2b14]">
-              <img
+              <ExpandableImage
                 src="/photo/SuperJoeyHomeIconNew.png"
                 alt="Super Joey"
-                className="mx-auto aspect-square w-full max-w-[560px] rounded-full object-contain"
+                imageClassName="mx-auto aspect-square w-full max-w-[560px] rounded-full object-contain"
+                buttonClassName="block w-full cursor-zoom-in rounded-full focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-ribbon"
               />
             </figure>
           </div>
@@ -137,10 +139,10 @@ export default function HomePage() {
               <span className="mt-1 block italic text-ribbon">A Legacy of Hope.</span>
             </h2>
             <figure className="mt-6 aspect-[4/3] overflow-hidden rounded-3xl border border-line bg-white shadow-[0_24px_50px_-36px_rgba(22,48,68,0.7)]">
-              <img
+              <ExpandableImage
                 src="/photo/SuperJoey-serverforlove.jpg"
                 alt="Volunteers serving families at a community meal"
-                className="h-full w-full object-cover"
+                imageClassName="h-full w-full object-cover"
               />
             </figure>
           </div>
@@ -246,10 +248,11 @@ export default function HomePage() {
             .map((leader) => (
               <li key={leader.name} className="flex items-center gap-4 border border-navy bg-card p-6">
                 {leader.photo ? (
-                  <img
+                  <ExpandableImage
                     src={leader.photo}
                     alt={leader.photoAlt ?? `${leader.name} portrait`}
-                    className="h-28 w-28 rounded-2xl border border-navy/10 bg-white object-contain p-1 sm:h-32 sm:w-32"
+                    imageClassName="h-28 w-28 rounded-2xl border border-navy/10 bg-white object-contain p-1 sm:h-32 sm:w-32"
+                    buttonClassName="shrink-0 cursor-zoom-in rounded-2xl focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-ribbon"
                   />
                 ) : (
                   <span className="flex h-20 w-20 items-center justify-center bg-sun font-serif text-xl text-navy">

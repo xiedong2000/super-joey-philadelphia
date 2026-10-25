@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { CommunitySupportAcknowledgment } from "@/components/CommunitySupportAcknowledgment";
+import { ExpandableImage } from "@/components/ExpandableImage";
 import { PageIntro } from "@/components/PageIntro";
 import { hasDonationLink, site } from "@/lib/content";
 
@@ -23,10 +24,10 @@ export default function DonatePage() {
       <div className="mx-auto w-full max-w-6xl px-5 py-14">
         <div className="mb-10 overflow-hidden rounded-[2rem] border border-line bg-card shadow-[0_24px_50px_-36px_rgba(22,48,68,0.7)]">
           <div className="flex min-h-[320px] items-center justify-center bg-[#edf3f8] p-3 md:min-h-[420px] md:p-5">
-            <img
+            <ExpandableImage
               src="/photo/Donations.png"
               alt="Super Joey Foundation donations"
-              className="h-full w-full object-contain"
+              imageClassName="h-full w-full object-contain"
             />
           </div>
         </div>
@@ -76,18 +77,18 @@ export default function DonatePage() {
             </p>
             <div className="mt-6 grid gap-4 sm:grid-cols-2">
               <figure className="rounded-2xl border border-line bg-white p-4 text-center">
-                <img
+                <ExpandableImage
                   src="/photo/donate-venmo.jpg"
                   alt="Venmo QR code to donate to Super Joey Foundation"
-                  className="mx-auto max-h-64 w-full object-contain"
+                  imageClassName="mx-auto max-h-64 w-full object-contain"
                 />
                 <figcaption className="mt-3 font-semibold">Venmo</figcaption>
               </figure>
               <figure className="rounded-2xl border border-line bg-white p-4 text-center">
-                <img
+                <ExpandableImage
                   src="/photo/donate-zelle.jpg"
                   alt="Zelle QR code for Super Joey Foundation Corporation"
-                  className="mx-auto max-h-64 w-full object-contain"
+                  imageClassName="mx-auto max-h-64 w-full object-contain"
                 />
                 <figcaption className="mt-3 font-semibold">Zelle</figcaption>
               </figure>

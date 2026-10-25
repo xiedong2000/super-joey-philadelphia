@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { ExpandableImage } from "@/components/ExpandableImage";
 import { PageIntro } from "@/components/PageIntro";
 import { activities, upcoming, videos } from "@/lib/content";
 import { VideoGrid } from "@/components/VideoCard";
@@ -58,10 +59,10 @@ export default function EventsPage() {
             {activities.map((activity) => (
               <li key={activity.slug} className="overflow-hidden rounded-3xl border border-line bg-card shadow-[0_24px_50px_-36px_rgba(22,48,68,0.7)]">
                 <div className="flex min-h-[320px] items-center justify-center bg-[#edf3f8] p-3 md:min-h-[420px] md:p-5">
-                  <img
+                  <ExpandableImage
                     src={activity.photo}
                     alt={activity.title}
-                    className="h-full w-full object-contain"
+                    imageClassName="h-full w-full object-contain"
                   />
                 </div>
                 <div className="p-6 md:p-8">

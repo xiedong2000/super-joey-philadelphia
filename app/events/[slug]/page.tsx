@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { ExpandableImage } from "@/components/ExpandableImage";
 import { activities, getActivity, site, videosFor } from "@/lib/content";
 import { VideoGrid } from "@/components/VideoCard";
 
@@ -46,10 +47,10 @@ export default async function EventPage({ params }: EventPageProps) {
         {activity.title}
       </h1>
       <div className="mt-6 flex items-center justify-center rounded-3xl bg-white p-5 shadow-[0_24px_50px_-36px_rgba(22,48,68,0.7)]">
-        <img
+        <ExpandableImage
           src={activity.photo}
           alt={activity.title}
-          className="max-h-[560px] w-full object-contain"
+          imageClassName="max-h-[560px] w-full object-contain"
         />
       </div>
       <p className="mt-5 max-w-3xl text-xl leading-8">{activity.summary}</p>

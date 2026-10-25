@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import { AlumniPhotoGallery } from "@/components/AlumniPhotoGallery";
+import { ExpandableImage } from "@/components/ExpandableImage";
 import { PageIntro } from "@/components/PageIntro";
 
 export const metadata: Metadata = {
@@ -30,6 +32,29 @@ const alumniByYear = [
   {
     year: "2023",
     graduates: ["Charley Wan", "Jerry Yan", "Sam Wang"],
+  },
+];
+
+const alumniPhotos = [
+  {
+    src: "/photo/alumni01.JPG",
+    alt: "Philadelphia chapter students gathered outdoors",
+    caption: "Philadelphia chapter students at an outdoor gathering.",
+  },
+  {
+    src: "/photo/alumni02.JPG",
+    alt: "Philadelphia chapter students holding a Super Joey Foundation banner",
+    caption: "Chapter students sharing the Super Joey Foundation message.",
+  },
+  {
+    src: "/photo/alumni03.JPG",
+    alt: "Super Joey Foundation members gathered at the Winter Concert 2021",
+    caption: "Super Joey Foundation members at the Winter Concert in 2021.",
+  },
+  {
+    src: "/photo/alumni04.jpg",
+    alt: "Philadelphia chapter members gathered at Delaware Valley Tennis Club",
+    caption: "Philadelphia chapter members gathered at Delaware Valley Tennis Club.",
   },
 ];
 
@@ -68,12 +93,19 @@ export default function AlumniPage() {
           </div>
         </section>
 
+        <section className="mt-14" aria-labelledby="alumni-gallery">
+          <h2 id="alumni-gallery" className="font-serif text-3xl text-navy">
+            Alumni memories
+          </h2>
+          <AlumniPhotoGallery photos={alumniPhotos} />
+        </section>
+
         <figure className="mt-14 overflow-hidden rounded-3xl border border-line bg-card p-4 shadow-[0_24px_50px_-36px_rgba(22,48,68,0.7)] md:p-6">
           <h2 className="font-serif text-3xl text-navy">Our graduates’ colleges</h2>
-          <img
+          <ExpandableImage
             src="/photo/alumni-college-map.png"
             alt="Map of colleges attended by Super Joey graduates across the United States"
-            className="mt-5 h-auto w-full rounded-2xl"
+            imageClassName="mt-5 h-auto w-full rounded-2xl"
           />
           <figcaption className="mt-3 text-sm leading-6 text-muted">
             Colleges represented among Super Joey graduates.

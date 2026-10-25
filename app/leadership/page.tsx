@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { ExpandableImage } from "@/components/ExpandableImage";
 import { PageIntro } from "@/components/PageIntro";
 import { leaders, site } from "@/lib/content";
 
@@ -22,10 +23,11 @@ export default function LeadershipPage() {
             <li key={leader.name} className="rounded-3xl border border-line bg-card p-7">
               <div className="flex items-center gap-4">
                 {leader.photo ? (
-                  <img
+                  <ExpandableImage
                     src={leader.photo}
                     alt={leader.photoAlt ?? `${leader.name} portrait`}
-                    className="h-56 w-56 rounded-2xl border border-navy/10 bg-white object-contain p-1 sm:h-72 sm:w-72"
+                    imageClassName="h-56 w-56 rounded-2xl border border-navy/10 bg-white object-contain p-1 sm:h-72 sm:w-72"
+                    buttonClassName="shrink-0 cursor-zoom-in rounded-2xl focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-ribbon"
                   />
                 ) : (
                   <span className="flex h-40 w-40 items-center justify-center rounded-2xl border border-navy/10 bg-navy font-serif text-xl text-ribbon sm:h-52 sm:w-52">
