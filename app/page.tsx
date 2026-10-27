@@ -35,6 +35,9 @@ export default function HomePage() {
     videos.find(
       (video) => video.title === "2022 Meal of Love",
     ),
+    videos.find(
+      (video) => video.title === "2024 Super Joey July 4th Charity Sale",
+    ),
   ].filter((video): video is (typeof videos)[number] => Boolean(video));
 
   return (

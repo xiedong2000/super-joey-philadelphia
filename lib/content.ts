@@ -196,6 +196,13 @@ export const videos: ChapterVideo[] = [
     short: true,
   },
   {
+    id: "zHQk7gWVKwI",
+    title: "2024 Super Joey July 4th Charity Sale",
+    year: "2024",
+    activity: "july-4th-charity-sale",
+    short: false,
+  },
+  {
     id: "5UwBuHCdqXc",
     title: "2022 Meal of Love",
     year: "2022",
