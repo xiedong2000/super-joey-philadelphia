@@ -250,23 +250,23 @@ export default function HomePage() {
           {leaders
             .filter((leader) => leader.role === "Co-President")
             .map((leader) => (
-              <li key={leader.name} className="flex items-center gap-4 border border-navy bg-card p-6">
+              <li key={leader.name} className="flex min-w-0 items-center gap-4 border border-navy bg-card p-5 sm:p-6">
                 {leader.photo ? (
                   <ExpandableImage
                     src={leader.photo}
                     alt={leader.photoAlt ?? `${leader.name} portrait`}
-                    imageClassName="h-28 w-28 rounded-2xl border border-navy/10 bg-white object-contain p-1 sm:h-32 sm:w-32"
+                    imageClassName="h-20 w-20 rounded-2xl border border-navy/10 bg-white object-contain p-1 sm:h-28 sm:w-28"
                     buttonClassName="shrink-0 cursor-zoom-in rounded-2xl focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-ribbon"
                   />
                 ) : (
-                  <span className="flex h-20 w-20 items-center justify-center bg-sun font-serif text-xl text-navy">
+                  <span className="flex h-20 w-20 shrink-0 items-center justify-center bg-sun font-serif text-xl text-navy">
                     {leader.initials}
                   </span>
                 )}
-                <div>
-                  <h3 className="font-serif text-3xl text-navy">{leader.name}</h3>
-                  <p className="font-bold text-gold-deep">{leader.role}</p>
-                  <p className="text-sm text-muted">{leader.school}</p>
+                <div className="min-w-0">
+                  <h3 className="font-serif text-2xl text-navy [overflow-wrap:anywhere] sm:text-3xl">{leader.name}</h3>
+                  <p className="font-bold text-gold-deep [overflow-wrap:anywhere]">{leader.role}</p>
+                  <p className="text-sm text-muted [overflow-wrap:anywhere]">{leader.school}</p>
                 </div>
               </li>
             ))}

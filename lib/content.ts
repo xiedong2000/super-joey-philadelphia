@@ -250,8 +250,6 @@ export const leaders: Leader[] = [
     school: "Central Bucks High School · Class of 2027",
     initials: "RW",
     bio: "",
-    photo: "/leadership/richard-wan.svg",
-    photoAlt: "Richard Wan portrait",
   },
   {
     name: "Ellen Zhou",
@@ -259,8 +257,6 @@ export const leaders: Leader[] = [
     school: "",
     initials: "EZ",
     bio: "",
-    photo: "/leadership/richard-wan.svg",
-    photoAlt: "Ellen Zhou placeholder portrait",
   },
   {
     name: "Olivia Tan",
@@ -268,8 +264,6 @@ export const leaders: Leader[] = [
     school: "",
     initials: "OT",
     bio: "",
-    photo: "/leadership/richard-wan.svg",
-    photoAlt: "Olivia Tan placeholder portrait",
   },
   {
     name: "Henry Yang",
@@ -277,8 +271,6 @@ export const leaders: Leader[] = [
     school: "",
     initials: "HY",
     bio: "",
-    photo: "/leadership/richard-wan.svg",
-    photoAlt: "Henry Yang placeholder portrait",
   },
   {
     name: "Jiahong Gao",
@@ -286,17 +278,13 @@ export const leaders: Leader[] = [
     school: "",
     initials: "JG",
     bio: "",
-    photo: "/leadership/richard-wan.svg",
-    photoAlt: "Jiahong Gao placeholder portrait",
   },
   {
     name: "Angela Chen",
-    role: "Social Media Manager",
-    school: "",
+    role: "Social Media Chair",
+    school: "Central Bucks High School South · Class of 2027",
     initials: "AC",
-    bio: "",
-    photo: "/leadership/richard-wan.svg",
-    photoAlt: "Angela Chen placeholder portrait",
+    bio: "Hi, I'm Angela! I'm the social media chair for the Super Joey Foundation. I really like art, face painting, painting, and I'm in mock trial.",
   },
   {
     name: "Matthew Xie",
@@ -304,8 +292,6 @@ export const leaders: Leader[] = [
     school: "",
     initials: "MX",
     bio: "",
-    photo: "/leadership/richard-wan.svg",
-    photoAlt: "Matthew Xie placeholder portrait",
   },
   {
     name: "Stanley Hu",
@@ -313,8 +299,6 @@ export const leaders: Leader[] = [
     school: "",
     initials: "SH",
     bio: "",
-    photo: "/leadership/richard-wan.svg",
-    photoAlt: "Stanley Hu placeholder portrait",
   },
 ];
 

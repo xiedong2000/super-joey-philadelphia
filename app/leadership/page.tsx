@@ -20,28 +20,28 @@ export default function LeadershipPage() {
       <div className="mx-auto w-full max-w-6xl px-5 py-14">
         <ul className="grid gap-6 md:grid-cols-2">
           {leaders.map((leader) => (
-            <li key={leader.name} className="rounded-3xl border border-line bg-card p-7">
-              <div className="flex items-center gap-4">
+            <li key={leader.name} className="min-w-0 rounded-3xl border border-line bg-card p-4 sm:p-5 lg:p-7">
+              <div className="flex items-center gap-3">
                 {leader.photo ? (
                   <ExpandableImage
                     src={leader.photo}
                     alt={leader.photoAlt ?? `${leader.name} portrait`}
-                    imageClassName="h-56 w-56 rounded-2xl border border-navy/10 bg-white object-contain p-1 sm:h-72 sm:w-72"
+                    imageClassName="h-44 w-44 rounded-2xl border border-navy/10 bg-white object-contain p-1 lg:h-56 lg:w-56"
                     buttonClassName="shrink-0 cursor-zoom-in rounded-2xl focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-ribbon"
                   />
                 ) : (
-                  <span className="flex h-40 w-40 items-center justify-center rounded-2xl border border-navy/10 bg-navy font-serif text-xl text-ribbon sm:h-52 sm:w-52">
+                  <span className="flex h-44 w-44 shrink-0 items-center justify-center rounded-2xl border border-navy/10 bg-navy font-serif text-4xl text-ribbon lg:h-56 lg:w-56 lg:text-5xl">
                     <span className="sr-only">{leader.name}. </span>
                     {leader.initials}
                   </span>
                 )}
-                <div>
-                  <h2 className="font-serif text-3xl text-navy">{leader.name}</h2>
-                  <p className="font-semibold text-gold-deep">{leader.role}</p>
+                <div className="min-w-0">
+                  <h2 className="font-serif text-base leading-tight text-navy [overflow-wrap:anywhere] lg:text-2xl">{leader.name}</h2>
+                  <p className="mt-1 text-sm font-semibold leading-snug text-gold-deep [overflow-wrap:anywhere] lg:text-base">{leader.role}</p>
                 </div>
               </div>
               {leader.school ? (
-                <p className="mt-5 text-sm font-semibold uppercase tracking-[0.14em] text-muted">
+                <p className="mt-5 text-sm font-semibold uppercase tracking-[0.14em] text-muted [overflow-wrap:anywhere]">
                   {leader.school}
                 </p>
               ) : null}
