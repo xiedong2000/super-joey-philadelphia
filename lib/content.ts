@@ -232,6 +232,8 @@ export type Leader = {
   bio: string;
   photo?: string;
   photoAlt?: string;
+  /** Extra classes for the thumbnail, used when a portrait needs different framing. */
+  photoClassName?: string;
 };
 
 export const leaders: Leader[] = [
@@ -285,6 +287,10 @@ export const leaders: Leader[] = [
     school: "Central Bucks High School South · Class of 2027",
     initials: "AC",
     bio: "Hi, I'm Angela! I'm the social media chair for the Super Joey Foundation. I really like art, face painting, painting, and I'm in mock trial.",
+    photo: "/photo/AngelaChen.jpg",
+    photoAlt: "Angela Chen portrait",
+    photoClassName:
+      "h-44 w-44 rounded-2xl border border-navy/10 bg-white object-contain p-8 lg:h-56 lg:w-56 lg:p-10",
   },
   {
     name: "Matthew Xie",

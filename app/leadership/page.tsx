@@ -26,7 +26,10 @@ export default function LeadershipPage() {
                   <ExpandableImage
                     src={leader.photo}
                     alt={leader.photoAlt ?? `${leader.name} portrait`}
-                    imageClassName="h-44 w-44 rounded-2xl border border-navy/10 bg-white object-contain p-1 lg:h-56 lg:w-56"
+                    imageClassName={
+                      leader.photoClassName ??
+                      "h-44 w-44 rounded-2xl border border-navy/10 bg-white object-contain p-1 lg:h-56 lg:w-56"
+                    }
                     buttonClassName="shrink-0 cursor-zoom-in rounded-2xl focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-ribbon"
                   />
                 ) : (
