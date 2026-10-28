@@ -302,9 +302,9 @@ export const leaders: Leader[] = [
   {
     name: "Stanley Hu",
     role: "Event Board",
-    school: "",
+    school: "The Haverford School · Class of 2029",
     initials: "SH",
-    bio: "",
+    bio: "I have volunteered with the Super Joey Foundation for over four years and currently serve as a board member of the Philadelphia Branch. I am passionate about science, leadership, service, and fundraising efforts that support our community and children and families affected by cancer.",
   },
 ];
 
