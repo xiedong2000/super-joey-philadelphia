@@ -168,6 +168,13 @@ export const videos: ChapterVideo[] = [
     short: false,
   },
   {
+    id: "VUyZs7KUU48",
+    title: "2023 Third Super Joey Charity Tennis Tournament",
+    year: "2023",
+    activity: "charity-tennis-tournament",
+    short: false,
+  },
+  {
     id: "rzoSE_ys0D4",
     title: "2025 Super Joey Father's Day Picnic",
     year: "2025",
@@ -208,6 +215,13 @@ export const videos: ChapterVideo[] = [
     year: "2022",
     activity: "serve-for-love",
     short: true,
+  },
+  {
+    id: "rkBdgxUREVQ",
+    title: "2021 Super Joey Foundation Winter Concert 2021",
+    year: "2021",
+    activity: "charity-concert",
+    short: false,
   },
   {
     id: "AnlRqzmbj_Q",
