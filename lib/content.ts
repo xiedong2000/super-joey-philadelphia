@@ -256,7 +256,7 @@ export const leaders: Leader[] = [
     role: "Co-President",
     school: "Lower Moreland High School · Class of 2027",
     initials: "PX",
-    bio: "",
+    bio: "Hello! My name is Patrick, and I've been involved with the Super Joey Foundation since 2019. Over the years, it has become an important part of my life, allowing me to make a meaningful difference in the lives of children affected by pediatric cancer. I encourage anyone interested to get involved and join our mission! Outside of my volunteer work with Super Joey, I enjoy making music on the piano and saxophone, playing tennis and table tennis, watching TV shows, and going to Chipotle.",
     photo: "/photo/PatrickXie.jpg",
     photoAlt: "Patrick Xie portrait",
   },
