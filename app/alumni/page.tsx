@@ -52,6 +52,11 @@ const alumniPhotos = [
     caption: "Make a donation to Ronald McDonald House in June 2022",
   },
   {
+    src: "/photo/2022_july_4th_charity_sale.JPG",
+    alt: "Philadelphia chapter members at the 2022 July 4th charity sale",
+    caption: "July 4th Charity Sale in 2022",
+  },
+  {
     src: "/photo/alumni05.jpg",
     alt: "Super Joey Foundation volunteers at Serve with Love",
     caption: "Serve with Love at Ronald McDonald House in September 2022.",
@@ -70,11 +75,6 @@ const alumniPhotos = [
     src: "/photo/alumni06.jpg",
     alt: "Philadelphia chapter members at a July 4th community sale",
     caption: "July 4th Charity Sale in 2024",
-  },
-  {
-    src: "/photo/2022_july_4th_charity_sale.JPG",
-    alt: "Philadelphia chapter members at the 2022 July 4th charity sale",
-    caption: "July 4th Charity Sale in 2022",
   },
   {
     src: "/photo/2025_fathers-Day_team_building.jpg",
