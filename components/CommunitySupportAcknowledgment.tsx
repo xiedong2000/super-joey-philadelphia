@@ -1,3 +1,5 @@
+import { SiteIcon } from "@/components/SiteIcon";
+
 export function CommunitySupportAcknowledgment() {
   return (
     <div className="mt-8 rounded-3xl border border-[#f4bd32]/60 bg-gradient-to-br from-[#eaf6ff] via-[#fff8e8] to-[#ecf9f5] p-6 shadow-[0_18px_32px_-24px_rgba(22,48,68,0.35)]">
@@ -12,44 +14,56 @@ export function CommunitySupportAcknowledgment() {
       </p>
       <ul className="mt-5 space-y-3 text-lg leading-8 text-[#1d3b4f]">
         <li>
-          <a
-            className="font-medium underline decoration-[#f4bd32] decoration-2 underline-offset-4 transition hover:text-[#176b67]"
-            href="https://www.delawarevalleytennisclub.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Delaware Valley Tennis Club
-          </a>
+          <div className="flex items-center gap-3">
+            <SiteIcon name="tennis" className="h-5 w-5" />
+            <a
+              className="font-medium underline decoration-[#f4bd32] decoration-2 underline-offset-4 transition hover:text-[#176b67]"
+              href="https://www.delawarevalleytennisclub.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Delaware Valley Tennis Club
+            </a>
+          </div>
         </li>
         <li>
-          <a
-            className="font-medium underline decoration-[#f4bd32] decoration-2 underline-offset-4 transition hover:text-[#176b67]"
-            href="https://www.pvccc.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Peace Valley Chinese Christian Church
-          </a>
+          <div className="flex items-center gap-3">
+            <SiteIcon name="church" className="h-5 w-5" />
+            <a
+              className="font-medium underline decoration-[#f4bd32] decoration-2 underline-offset-4 transition hover:text-[#176b67]"
+              href="https://www.pvccc.org/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Peace Valley Chinese Christian Church
+            </a>
+          </div>
         </li>
         <li>
-          <a
-            className="font-medium underline decoration-[#f4bd32] decoration-2 underline-offset-4 transition hover:text-[#176b67]"
-            href="https://www.matsusushipa.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Matsu Sushi and Ramen Inc.
-          </a>
+          <div className="flex items-center gap-3">
+            <SiteIcon name="sushi" className="h-5 w-5" />
+            <a
+              className="font-medium underline decoration-[#f4bd32] decoration-2 underline-offset-4 transition hover:text-[#176b67]"
+              href="https://www.matsusushipa.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Matsu Sushi and Ramen Inc.
+            </a>
+          </div>
         </li>
         <li>
-          <a
-            className="font-medium underline decoration-[#f4bd32] decoration-2 underline-offset-4 transition hover:text-[#176b67]"
-            href="https://www.homes.com/real-estate-agents/zhan-su/gtvqz3z/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Longlong Zhan Real Estate Investment LLC.
-          </a>
+          <div className="flex items-center gap-3">
+            <SiteIcon name="home" className="h-5 w-5" />
+            <a
+              className="font-medium underline decoration-[#f4bd32] decoration-2 underline-offset-4 transition hover:text-[#176b67]"
+              href="https://www.homes.com/real-estate-agents/zhan-su/gtvqz3z/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Longlong Zhan Real Estate Investment LLC.
+            </a>
+          </div>
         </li>
       </ul>
     </div>

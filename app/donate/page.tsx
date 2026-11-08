@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { CommunitySupportAcknowledgment } from "@/components/CommunitySupportAcknowledgment";
 import { ExpandableImage } from "@/components/ExpandableImage";
 import { PageIntro } from "@/components/PageIntro";
+import { SiteIcon } from "@/components/SiteIcon";
 import { hasDonationLink, site } from "@/lib/content";
 
 export const metadata: Metadata = {
@@ -93,16 +94,23 @@ export default function DonatePage() {
                 <figcaption className="mt-3 font-semibold">Zelle</figcaption>
               </figure>
             </div>
-            <p className="mt-5 leading-7">
-              <span className="font-semibold">Zelle:</span>{" "}
+            <p className="mt-5 flex flex-wrap items-center gap-x-2 leading-7">
+              <span className="inline-flex items-center gap-2 font-semibold">
+                <SiteIcon name="transfer" className="h-4 w-4" />
+                Zelle:
+              </span>
               <a className="underline" href="mailto:donations@superjoey.org">
                 donations@superjoey.org
               </a>
-              <br />
+            </p>
+            <p className="mt-1 leading-7">
               <span className="font-semibold">Add note:</span> To Philly Branch
             </p>
-            <p className="mt-4 leading-7">
-              <span className="font-semibold">PayPal:</span>{" "}
+            <p className="mt-4 flex flex-wrap items-center gap-x-2 leading-7">
+              <span className="inline-flex items-center gap-2 font-semibold">
+                <SiteIcon name="wallet" className="h-4 w-4" />
+                PayPal:
+              </span>
               <a
                 className="underline"
                 href="mailto:sjf.philadelphia.donation@gmail.com"

@@ -42,11 +42,24 @@ export default function EventsPage() {
           ) : (
             <ul className="mt-6 grid gap-4 md:grid-cols-3">
               {upcoming.map((event) => (
-                <li key={`${event.title}-${event.when}`} className="rounded-3xl border border-line bg-card p-6">
-                  <p className="text-sm font-semibold text-gold-deep">{event.when}</p>
-                  <h3 className="mt-2 font-serif text-2xl text-navy">{event.title}</h3>
-                  <p className="mt-2 text-sm font-semibold text-navy">{event.where}</p>
-                  <p className="mt-3 leading-7 text-muted">{event.detail}</p>
+                <li key={`${event.title}-${event.when}`} className="overflow-hidden rounded-3xl border border-line bg-card">
+                  {event.photo ? (
+                    <figure className="overflow-hidden border-b border-line bg-[#edf3f8]">
+                      <ExpandableImage
+                        src={event.photo}
+                        alt={`${event.title} event`}
+                        title={event.title}
+                        imageClassName="h-48 w-full object-cover"
+                        buttonClassName="block w-full cursor-zoom-in focus-visible:outline-2 focus-visible:outline-inset focus-visible:outline-ribbon"
+                      />
+                    </figure>
+                  ) : null}
+                  <div className="p-6">
+                    <p className="text-sm font-semibold text-gold-deep">{event.when}</p>
+                    <h3 className="mt-2 font-serif text-2xl text-navy">{event.title}</h3>
+                    <p className="mt-2 text-sm font-semibold text-navy">{event.where}</p>
+                    <p className="mt-3 leading-7 text-muted">{event.detail}</p>
+                  </div>
                 </li>
               ))}
             </ul>

@@ -17,7 +17,12 @@ export type SiteIconName =
   | "tennis"
   | "concert"
   | "sale"
-  | "team";
+  | "team"
+  | "church"
+  | "sushi"
+  | "home"
+  | "transfer"
+  | "wallet";
 
 export function SiteIcon({
   name,
@@ -124,6 +129,35 @@ export function SiteIcon({
         <circle cx="9" cy="8" r="3" />
         <circle cx="17" cy="9" r="2.5" />
         <path d="M3 20v-1a6 6 0 0 1 12 0v1M16 15a5 5 0 0 1 5 5" />
+      </>
+    ),
+    church: (
+      <>
+        <path d="M3 20h18M5 20V10l7-5 7 5v10M9 20v-5h6v5M12 2v6M10 4h4" />
+      </>
+    ),
+    sushi: (
+      <>
+        <path d="M4 13a8 8 0 0 1 16 0v5H4v-5Z" />
+        <path d="M4 13h16M8 3l8 6M11 2l8 6" />
+        <circle cx="12" cy="14" r="2" />
+      </>
+    ),
+    home: (
+      <>
+        <path d="m3 11 9-8 9 8v10H3V11Z" />
+        <path d="M9 21v-7h6v7" />
+      </>
+    ),
+    transfer: (
+      <>
+        <path d="M4 8h15m-4-4 4 4-4 4M20 16H5m4-4-4 4 4 4" />
+      </>
+    ),
+    wallet: (
+      <>
+        <path d="M4 6.5A2.5 2.5 0 0 1 6.5 4H19a2 2 0 0 1 2 2v13H5a2 2 0 0 1-2-2V6.5Z" />
+        <path d="M3 8h16a2 2 0 0 1 2 2v3h-5a2 2 0 0 1 0-4h5M16 11h.01" />
       </>
     ),
   };

@@ -123,6 +123,7 @@ export type UpcomingEvent = {
   when: string;
   where: string;
   detail: string;
+  photo?: string;
 };
 
 /** Confirmed future dates only. Leave this empty when nothing is scheduled yet. */
@@ -132,6 +133,7 @@ export const upcoming: UpcomingEvent[] = [
     when: "November 25, 2026",
     where: "Ronald McDonald House Philadelphia",
     detail: "Join us for Thanksgiving Serve with Love.",
+    photo: "/photo/SuperJoey-serverforlove.jpg",
   },
 ];
 
