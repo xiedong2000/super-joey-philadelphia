@@ -25,6 +25,12 @@ export function SiteFooter() {
           </p>
           <ul className="mt-3 space-y-2 text-sm text-navy/80">
             <li>
+              <Link href="/about" className="inline-flex items-center gap-2 hover:text-ribbon">
+                <SiteIcon name="about" className="h-4 w-4" />
+                About
+              </Link>
+            </li>
+            <li>
               <Link href="/events" className="inline-flex items-center gap-2 hover:text-ribbon">
                 <SiteIcon name="activities" className="h-4 w-4" />
                 Activities

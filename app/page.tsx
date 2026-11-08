@@ -162,6 +162,14 @@ export default function HomePage() {
                 Read Joey’s story on the national site
               </a>
             </p>
+            <p>
+              <Link
+                className="font-bold text-navy underline decoration-ribbon underline-offset-4"
+                href="/about"
+              >
+                About the Philadelphia chapter
+              </Link>
+            </p>
           </div>
         </div>
       </section>
