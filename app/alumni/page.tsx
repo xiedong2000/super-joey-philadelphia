@@ -71,6 +71,16 @@ const alumniPhotos = [
     alt: "Philadelphia chapter members at a July 4th community sale",
     caption: "July 4th Charity Sale in 2024",
   },
+  {
+    src: "/photo/2022_july_4th_charity_sale.JPG",
+    alt: "Philadelphia chapter members at the 2022 July 4th charity sale",
+    caption: "July 4th Charity Sale in 2022",
+  },
+  {
+    src: "/photo/2025_fathers-Day_team_building.jpg",
+    alt: "Super Joey Foundation members at the 2025 Father's Day team building event",
+    caption: "Father's Day Team Building in 2025",
+  },
 ];
 
 export default function AlumniPage() {
