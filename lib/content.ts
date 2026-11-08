@@ -295,9 +295,9 @@ export const leaders: Leader[] = [
   {
     name: "Jiahong Gao",
     role: "Treasurer",
-    school: "",
+    school: "Abington Senior High School · Class of 2027",
     initials: "JG",
-    bio: "",
+    bio: "Hi, I'm Jiahong. I've been with the Super Joey Foundation for about four years. I love piano, violin, tennis, and making a difference in the lives of families affected by pediatric cancer!",
   },
   {
     name: "Angela Chen",
@@ -311,9 +311,9 @@ export const leaders: Leader[] = [
   {
     name: "Matthew Xie",
     role: "Event Board",
-    school: "",
+    school: "Upper Dublin High School · Class of 2028",
     initials: "MX",
-    bio: "",
+    bio: "Hi, I'm Matthew Xie. I've been involved with the Super Joey Foundation for the past 4 years. I have participated in the Fourth of July donut sales, tennis tournaments, Spring Concert and gift-wrapping events. Super Joey allows me to help out and make an impact on our community and I am proud to have supported the families that are affected by childhood cancer. Outside of Super Joey, I enjoy playing chess, video games, tennis and listening to music.",
   },
   {
     name: "Stanley Hu",
