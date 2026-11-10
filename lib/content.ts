@@ -323,6 +323,8 @@ export const leaders: Leader[] = [
     school: "The Haverford School · Class of 2029",
     initials: "SH",
     bio: "I have volunteered with the Super Joey Foundation for over four years and currently serve as a board member of the Philadelphia Branch. I am passionate about science, leadership, service, and fundraising efforts that support our community and children and families affected by cancer.",
+    photo: "/photo/StandleyHu.jpeg",
+    photoAlt: "Stanley Hu portrait",
   },
 ];
 
